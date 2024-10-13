@@ -46,6 +46,11 @@ jobs:
           # Atualiza o arquivo README.md
           sed -i "/$month_section/a\\$event_entry" README.md
 
+      - name: Set up Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
       - name: Criar uma nova branch
         run: |
           branch_name="feature/add-event-issue-${{ github.event.issue.number }}"
