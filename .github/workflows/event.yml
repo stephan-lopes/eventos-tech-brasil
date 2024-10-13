@@ -1,79 +1,64 @@
-name: Agendamento de Evento
-
+name: Adicionar Evento no README
 on:
   issues:
     types: [opened]
-
 jobs:
-  agendar-evento:
+  update-readme:
+    if: github.event.issue.labels.*.name contains 'new-event'
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      issues: write
-    env:
-      ISSUE_BODY: "${{ github.event.issue.body }}"
-    if: contains(github.event.issue.title, '[Novo Evento]:')
     steps:
-      - name: Agendar Evento
-        uses: actions/checkout@v3
+      - name: Checar o repositório
+        uses: actions/checkout@v2
 
-      - name: Issue Forms Body Parser
-        id: parse
-        uses: zentered/issue-forms-body-parser@v2.1.1
-        with:
-          body: ${{ env.ISSUE_BODY }}
-
-      - name: transformar dados
-        id: tratamento
+      - name: Obter detalhes do evento da issue
+        id: event_details
         run: |
-          evento=$(echo ${{ toJSON(steps.parse.outputs.data) }} | jq .evento.text | sed 's/"//g')
-          site=$(echo ${{ toJSON(steps.parse.outputs.data) }} | jq .site.text | sed 's/"//g')
-          tipo=$(echo ${{ toJSON(steps.parse.outputs.data) }} | jq .tipo.text | sed 's/"//g')
-          local=$(echo ${{ toJSON(steps.parse.outputs.data) }} | jq .local.text | sed 's/"//g')
-          mes=$(echo ${{ toJSON(steps.parse.outputs.data) }} | jq .mes.text | sed 's/"//g')
-          dia=$(echo ${{ toJSON(steps.parse.outputs.data) }} | jq .dia.text | sed 's/"//g')
+          event_name=$(echo "${{ github.event.issue.body }}" | grep 'Nome do Evento' | sed 's/^.*: //')
+          event_url=$(echo "${{ github.event.issue.body }}" | grep 'Site do Evento' | sed 's/^.*: //')
+          event_type=$(echo "${{ github.event.issue.body }}" | grep 'Modalidade do Evento' | sed 's/^.*: //')
+          event_city=$(echo "${{ github.event.issue.body }}" | grep 'Cidade do Evento' | sed 's/^.*: //')
+          event_state=$(echo "${{ github.event.issue.body }}" | grep 'Estado Federativo do Evento' | sed 's/^.*: //')
+          event_month=$(echo "${{ github.event.issue.body }}" | grep 'Mês do Evento' | sed 's/^.*: //')
+          event_day=$(echo "${{ github.event.issue.body }}" | grep 'Dia do Evento' | sed 's/^.*: //')
 
-          echo "evento=$evento" >> $GITHUB_OUTPUT
-          echo "site=$site" >> $GITHUB_OUTPUT
-          echo "tipo=$tipo" >> $GITHUB_OUTPUT
-          echo "local=$local" >> $GITHUB_OUTPUT
-          echo "mes=$mes" >> $GITHUB_OUTPUT
-          echo "dia=$dia" >> $GITHUB_OUTPUT
+          echo "::set-output name=event_name::$event_name"
+          echo "::set-output name=event_url::$event_url"
+          echo "::set-output name=event_type::$event_type"
+          echo "::set-output name=event_city::$event_city"
+          echo "::set-output name=event_state::$event_state"
+          echo "::set-output name=event_month::$event_month"
+          echo "::set-output name=event_day::$event_day"
 
-      - name: Atualizar README.md
+      - name: Atualizar README.md com novo evento
         run: |
-          linha=$(cat README.md | grep -n "${{ steps.tratamento.outputs.mes }}:END" | cut -d: -f1)
+          # Lógica para encontrar o mês correto no README.md
+          month_section="<!-- ${{ steps.event_details.outputs.event_month }}:START -->"
+          event_entry="- ${{ steps.event_details.outputs.event_day }}: [${{ steps.event_details.outputs.event_name }}](${{ steps.event_details.outputs.event_url }})"
 
-          if [ "${{ steps.tratamento.outputs.tipo }}" == "Presencial" ]; then
-            shield="![presencial](https://img.shields.io/static/v1?label=&message=presencial&color=darkblue)"
-          elif [ "${{ steps.tratamento.outputs.tipo }}" == "Online" ]; then
-            shield="![online](https://img.shields.io/static/v1?label=&message=online&color=green)"
-          elif [ "${{ steps.tratamento.outputs.tipo }}" == "Hibrido" ]; then
-            shield="![híbrido](https://img.shields.io/static/v1?label=&message=h%C3%ADbrido&color=blue)"
+          if [ "${{ steps.event_details.outputs.event_type }}" == "Presencial" ]; then
+            event_entry="$event_entry - _${{ steps.event_details.outputs.event_city }}/${{ steps.event_details.outputs.event_state }}_ ![presencial]"
+          elif [ "${{ steps.event_details.outputs.event_type }}" == "Híbrido" ]; then
+            event_entry="$event_entry - _${{ steps.event_details.outputs.event_city }}/${{ steps.event_details.outputs.event_state }}_ ![híbrido]"
+          else
+            event_entry="$event_entry ![online]"
           fi
 
+          # Atualiza o arquivo README.md
+          sed -i "/$month_section/a\\$event_entry" README.md
 
-          dadosevento="- ${{ steps.tratamento.outputs.dia }} - [${{ steps.tratamento.outputs.evento }}](${{ steps.tratamento.outputs.site }})  - ${{ steps.tratamento.outputs.local }} - $shield"
-          echo "$dadosevento"
-          sed -i "${linha}i $dadosevento" README.md
+      - name: Criar uma nova branch
+        run: |
+          branch_name="add-event-${{ github.event.issue.number }}-${{ steps.event_details.outputs.event_name// /- }}"
+          git checkout -b $branch_name
+          git add README.md
+          git commit -m "Adicionando novo evento: ${{ steps.event_details.outputs.event_name }}"
+          git push origin $branch_name
 
-      - name: Commit changes
-        uses: stefanzweifel/git-auto-commit-action@v4
+      - name: Criar Pull Request
+        uses: peter-evans/create-pull-request@v4
         with:
-          commit_message: "Atualizando README.md"
-          commit_options: "--no-verify"
-          commit_user_name: events-bot
-          commit_user_email: events@bot.com
-
-      - name: Create comment
-        uses: peter-evans/create-or-update-comment@v2
-        with:
-          issue-number: ${{ github.event.issue.number }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: $branch_name
+          title: "Adicionando novo evento: ${{ steps.event_details.outputs.event_name }}"
           body: |
-            Evento cadastrado com sucesso!!
-            Obrigado por contribuir com a comunidade!
-
-      - name: Close Issue
-        uses: peter-evans/close-issue@v2
-        with:
-          issue-number: ${{ github.event.issue.number }}
+            Este Pull Request adiciona o seguinte evento ao arquivo README.md:
