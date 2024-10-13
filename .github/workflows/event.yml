@@ -8,11 +8,11 @@ jobs:
   agendar-evento:
     runs-on: ubuntu-latest
     permissions:
-      contents: write 
-      issues: write   
+      contents: write
+      issues: write
     env:
       ISSUE_BODY: "${{ github.event.issue.body }}"
-    if: contains(github.event.issue.title, '[Evento]:')    
+    if: contains(github.event.issue.title, '[Novo Evento]:')
     steps:
       - name: Agendar Evento
         uses: actions/checkout@v3
@@ -22,7 +22,7 @@ jobs:
         uses: zentered/issue-forms-body-parser@v2.1.1
         with:
           body: ${{ env.ISSUE_BODY }}
-      
+
       - name: transformar dados
         id: tratamento
         run: |
@@ -32,7 +32,7 @@ jobs:
           local=$(echo ${{ toJSON(steps.parse.outputs.data) }} | jq .local.text | sed 's/"//g')
           mes=$(echo ${{ toJSON(steps.parse.outputs.data) }} | jq .mes.text | sed 's/"//g')
           dia=$(echo ${{ toJSON(steps.parse.outputs.data) }} | jq .dia.text | sed 's/"//g')
-          
+
           echo "evento=$evento" >> $GITHUB_OUTPUT
           echo "site=$site" >> $GITHUB_OUTPUT
           echo "tipo=$tipo" >> $GITHUB_OUTPUT
@@ -51,8 +51,8 @@ jobs:
           elif [ "${{ steps.tratamento.outputs.tipo }}" == "Hibrido" ]; then
             shield="![híbrido](https://img.shields.io/static/v1?label=&message=h%C3%ADbrido&color=blue)"
           fi
-          
-          
+
+
           dadosevento="- ${{ steps.tratamento.outputs.dia }} - [${{ steps.tratamento.outputs.evento }}](${{ steps.tratamento.outputs.site }})  - ${{ steps.tratamento.outputs.local }} - $shield"
           echo "$dadosevento"
           sed -i "${linha}i $dadosevento" README.md
@@ -61,7 +61,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: "Atualizando README.md"
-          commit_options: '--no-verify'
+          commit_options: "--no-verify"
           commit_user_name: events-bot
           commit_user_email: events@bot.com
 
@@ -72,7 +72,7 @@ jobs:
           body: |
             Evento cadastrado com sucesso!!
             Obrigado por contribuir com a comunidade!
-            
+
       - name: Close Issue
         uses: peter-evans/close-issue@v2
         with:
