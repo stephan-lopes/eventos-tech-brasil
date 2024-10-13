@@ -39,6 +39,11 @@ body:
     validations:
       required: true
 
+  - type: markdown
+    attributes:
+      value: |
+        ## Qual a Localidade do Evento?
+
   - type: input
     id: event_city
     attributes:
@@ -85,6 +90,11 @@ body:
         - Tocantins (TO)
     validations:
       required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Quando o evento vai acontecer?
 
   - type: dropdown
     id: event_year
