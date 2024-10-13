@@ -1,7 +1,7 @@
 name: Agendar um Novo Evento!
 description: Utilize essa opção caso deseje adicionar um novo evento!
-title: "[Novo Evento] "
-labels: event/new
+title: "Adicionando um novo evento no README.md"
+labels: evento/novo-evento
 body:
   - type: markdown
     attributes:
