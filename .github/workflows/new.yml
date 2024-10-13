@@ -12,13 +12,23 @@ jobs:
       - name: Obter detalhes do evento da issue
         id: event_details
         run: |
-          event_name=$(echo "${{ github.event.issue.body }}" | grep 'Nome do Evento' | sed 's/^.*: //')
-          event_url=$(echo "${{ github.event.issue.body }}" | grep 'Site do Evento' | sed 's/^.*: //')
-          event_type=$(echo "${{ github.event.issue.body }}" | grep 'Modalidade do Evento' | sed 's/^.*: //')
-          event_city=$(echo "${{ github.event.issue.body }}" | grep 'Cidade do Evento' | sed 's/^.*: //')
-          event_state=$(echo "${{ github.event.issue.body }}" | grep 'Estado Federativo do Evento' | sed 's/^.*: //')
-          event_month=$(echo "${{ github.event.issue.body }}" | grep 'Mês do Evento' | sed 's/^.*: //')
-          event_day=$(echo "${{ github.event.issue.body }}" | grep 'Dia do Evento' | sed 's/^.*: //')
+
+          event_info="${{ github.event.issue.body }}"
+
+          get_event_value() {
+            local event_info="$1"
+            local key_name="$2"
+
+            echo "$event_info" | awk '/^###/ { key=$0; next }NF { print key ": " $0 }' | grep 'Mês do Evento' | sed 's/^.*: //'
+          }
+
+          event_name=$(get_event_values "$event_info" 'Nome do Evento')
+          event_url=$(get_event_values "$event_info" 'Site do Evento')
+          event_type=$(get_event_values "$event_info" 'Modalidade do Evento')
+          event_city=$(get_event_values "$event_info" 'Cidade do Evento')
+          event_state=$(get_event_values "$event_info" 'Estado Federativo do Evento')
+          event_month=$(get_event_values "$event_info" 'Mês do Evento')
+          event_day=$(get_event_values "$event_info" 'Dia do Evento')
 
           echo $event_name
           echo $event_url
@@ -28,10 +38,10 @@ jobs:
           echo $event_month
           echo $event_day
 
-          echo "::set-output name=event_name::$event_name"
-          echo "::set-output name=event_url::$event_url"
-          echo "::set-output name=event_type::$event_type"
-          echo "::set-output name=event_city::$event_city"
-          echo "::set-output name=event_state::$event_state"
-          echo "::set-output name=event_month::$event_month"
-          echo "::set-output name=event_day::$event_day"
+          echo "event_name=$event_name" >> $GITHUB_OUTPUT
+          echo "event_url=$event_url" >> $GITHUB_OUTPUT
+          echo "event_type=$event_type" >> $GITHUB_OUTPUT
+          echo "event_city=$event_city" >> $GITHUB_OUTPUT
+          echo "event_state=$event_state" >> $GITHUB_OUTPUT
+          echo "event_month=$event_month" >> $GITHUB_OUTPUT
+          echo "event_day=$event_day" >> $GITHUB_OUTPUT
