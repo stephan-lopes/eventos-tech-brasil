@@ -39,11 +39,8 @@ body:
         - Presencial
         - Online
         - Híbrido
-<<<<<<< HEAD
-=======
     validations:
       required: true
->>>>>>> 3f42173 (feat: add criar-evento.yml)
 
   - type: input
     id: event_city
@@ -52,11 +49,7 @@ body:
       description: Em qual cidade irá acontecer o evento? (Este campo é obrigatório para modalidades Híbrido e Presencial)
       placeholder: "Ex: São Paulo"
     validations:
-<<<<<<< HEAD
-      required: true
-=======
       required: false
->>>>>>> 3f42173 (feat: add criar-evento.yml)
 
   - type: dropdown
     id: event_state
@@ -94,11 +87,7 @@ body:
         - Sergipe (SE)
         - Tocantins (TO)
     validations:
-<<<<<<< HEAD
-      required: true
-=======
       required: false
->>>>>>> 3f42173 (feat: add criar-evento.yml)
 
   - type: dropdown
     id: event_month
