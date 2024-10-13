@@ -4,7 +4,7 @@ on:
     types: [opened]
 jobs:
   update-readme:
-    if: contains(github.event.issue.labels.*.name, 'new-event')
+    if: contains(github.event.issue.labels.*.name, 'event/new')
     runs-on: ubuntu-latest
     steps:
       - name: Checar o repositório
