@@ -8,6 +8,11 @@ body:
       value: |
         # Vamos agendar seu evento?
 
+  - type: markdown
+    attributes:
+      value: |
+        ## Informações Gerais do Evento
+
   - type: input
     id: event_name
     attributes:
