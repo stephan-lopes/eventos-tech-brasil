@@ -1,10 +1,7 @@
 name: Agendar um Novo Evento!
 description: Utilize essa opção caso deseje adicionar um novo evento!
 title: "[Novo Evento]:"
-labels:
-  - new-event
-assignees:
-  - octocat
+labels: event/new
 body:
   - type: markdown
     attributes:
