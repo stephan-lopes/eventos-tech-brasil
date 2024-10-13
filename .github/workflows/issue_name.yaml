@@ -11,15 +11,23 @@ jobs:
       issues: write
       pull-requests: write
     steps:
-      - run: echo ${{ github.event.issue.title }}
-
       - name: Checar se o título da issue é "[Novo Evento]"
-        if: ${{ github.event.issue.title == '[Novo Evento]' }}
         run: |
-          echo "O título da issue é '[Novo Evento]'. Vamos atualizar o nome."
+          title="${{ github.event.issue.title }}"
+
+          # Remover espaços em branco ao redor do título
+          trimmed_title=$(echo "$title" | xargs)
+
+          if [ "$trimmed_title" == "[Novo Evento]" ]; then
+            echo "O título da issue é '[Novo Evento]'. Vamos atualizar o nome."
+            echo "continue=true" >> $GITHUB_ENV
+          else
+            echo "O título da issue não é '[Novo Evento]', não será alterado."
+            echo "continue=false" >> $GITHUB_ENV
+          fi
 
       - name: Atualizar título da issue
-        if: ${{ github.event.issue.title == '[Novo Evento]' }}
+        if: ${{ env.continue == 'true' }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -47,4 +55,4 @@ jobs:
             -H "Authorization: token $GITHUB_TOKEN" \
             -H "Accept: application/vnd.github.v3+json" \
             https://api.github.com/repos/$repo_name/issues/$issue_number \
-            -d "{\"title\":\"[Novo Evento] $event_name\"}"
+            -d "{\"title\":\"[Evento] $event_name\"}"
