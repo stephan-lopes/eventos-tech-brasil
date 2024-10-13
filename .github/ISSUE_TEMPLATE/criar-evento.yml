@@ -57,7 +57,7 @@ body:
       label: "[Híbrido/Presencial] Estado Federativo do Evento"
       description: "Informe o estado federativo onde o evento ocorrerá. (Este campo é obrigatório para modalidades Híbrido e Presencial)"
       multiple: false
-      default: 25
+      default: 24
       options:
         - Acre (AC)
         - Alagoas (AL)
