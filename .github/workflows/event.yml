@@ -48,7 +48,7 @@ jobs:
 
       - name: Criar uma nova branch
         run: |
-          branch_name="add-event-${{ github.event.issue.number }}-${{ steps.event_details.outputs.event_name// /- }}"
+          branch_name="add-event-${{ github.event.issue.number }}-${{ steps.event_details.outputs.event_name }}"
           git checkout -b $branch_name
           git add README.md
           git commit -m "Adicionando novo evento: ${{ steps.event_details.outputs.event_name }}"
