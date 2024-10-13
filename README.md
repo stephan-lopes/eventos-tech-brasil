@@ -23,6 +23,7 @@ Para contribuir você precisa adicionar as seguintes informações: **data, nome
 - ![online]
 
 ## Eventos em 2024
+<!-- ANO2024:START -->
 
 ### Outubro
 
@@ -53,6 +54,7 @@ Para contribuir você precisa adicionar as seguintes informações: **data, nome
 - 30: [MongoDB.local São Paulo](https://www.mongodb.com/pt-br/events/mongodb-local/sao-paulo#:~:text=local%3F-,MongoDB.,happy%20hour%20e%20muito%20mais) - _São Paulo/SP_ ![presencial]
 - 31: [PrograMaria Summit 2024](https://doity.com.br/programaria-summit-2024) ![online]
 - 31: [Estratégia de estudos para evoluir em Dev RPA](https://www.linkedin.com/events/live-estrat-giasdeestudoparaevo7248035492192030721/) ![online]
+
 <!-- OUTUBRO:END -->
 
 ### Novembro
@@ -86,10 +88,10 @@ Para contribuir você precisa adicionar as seguintes informações: **data, nome
 - 27, 28 e 29: [Latinoware 2024](https://latinoware.org/) - _Foz do Iguaçu/PR_ ![híbrido] 
 - 30: [NullBytes Security Conference](https://www.nullbyte-con.org/) - _Salvador/BA_ ![presencial]
 - 30: [BHack Conference 2024](https://www.bhack.com.br/) - _Belo Horizonte/MG_ ![presencial]
+
 <!-- NOVEMBRO:END -->
 
 ### Dezembro
-
 <!-- DEZEMBRO:START -->
 
 - 01: [BHack Conference 2024](https://www.bhack.com.br/) - _Belo Horizonte/MG_ ![presencial]
@@ -102,31 +104,53 @@ Para contribuir você precisa adicionar as seguintes informações: **data, nome
 
 <!-- DEZEMBRO:END -->
 
-## Eventos 2025
+<!-- ANO2024:END -->
 
-<!-- MAIO_2025:START -->
+## Eventos 2025
+<!-- ANO2025:START -->
+
+<!-- JANEIRO:START -->
+<!-- JANEIRO:END -->
+<!-- FEVEREIRO:START -->
+<!-- FEVEREIRO:END -->
+<!-- MARÇO:START -->
+<!-- MARÇO:END -->
+<!-- ABRIL:START -->
+<!-- ABRIL:END -->
 
 ### Maio
+<!-- MAIO:START -->
 
 - 05 e 06: [GopherCon Brasil 2025](https://www.blueticket.com.br/evento/35079/gophercon-brasil-2025) - _Florianópolis/SC_ ![presencial]
-
-<!-- MAIO_2025:END -->
 - 19 a 23: [XLIII Simpósio Brasileiro de Redes de Computadores - SBRC 2025](https://sbrc.sbc.org.br/2025) -  Natal/RN![presencial]
 
-
-<!-- JULHO_2025:START -->
+<!-- MAIO:END -->
+<!-- JUNHO:START -->
+<!-- JUNHO:END -->
 
 ### Julho
+<!-- JULHO:START -->
 
 - 20, 21, 22, 23, 24: [XLV Congresso da Sociedade Brasileira de Computação - CSBC 2025](https://csbc.sbc.org.br/2025/) - _Maceió/AL_ ![presencial]
   
-<!-- JULHO_2025:END -->
+<!-- JULHO:END -->
+<!-- AGOSTO:START -->
+<!-- AGOSTO:END -->
 
 ### Setembro
+<!-- SETEMBRO:START -->
 
-<!-- SETEMBRO_2025:START -->
 - 01 a 04: [Simpósio Brasileiro de Cibersegurança - SBSeg 2025](https://sbseg2025.ppgia.pucpr.br/) - Foz do Iguaçu/PR ![presencial]
 
+<!-- SETEMBRO:END -->
+<!-- OUTUBRO:START -->
+<!-- OUTUBRO:END -->
+<!-- NOVEMBRO:START -->
+<!-- NOVEMBRO:END -->
+<!-- DEZEMBRO:START -->
+<!-- DEZEMBRO:END -->
+
+<!-- ANO2025:END -->
 
 ## TBA: To Be Announced
 
@@ -143,7 +167,7 @@ Para contribuir você precisa adicionar as seguintes informações: **data, nome
 - TBA: [XXIII Simpósio Brasileiro sobre Fatores Humanos em Sistemas Computacionais (IHC)](https://www.sbc.org.br/eventos/calendario-de-eventos/evento/657/xxiii-simposio-brasileiro-sobre-fatores-humanos-em-sistemas-computacionais-ihc) - _Brasília/DF_ ![presencial]
 - TBA: [XXX Simpósio Brasileiro de Sistemas Multimídia e Web (WebMedia 2024)](https://www.sbc.org.br/eventos/calendario-de-eventos/evento/669/xxx-simposio-brasileiro-de-sistemas-multimidia-e-web-webmedia-2024) - _Juiz de Fora/MG_ ![presencial]
 
-<!-- TBA:START -->
+<!-- TBA:END -->
 
 ## Eventos dos anos anteriores
 
