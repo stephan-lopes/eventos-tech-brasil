@@ -15,7 +15,7 @@ jobs:
 
           event_info="${{ github.event.issue.body }}"
 
-          get_event_value() {
+          get_event_values() {
             local event_info="$1"
             local key_name="$2"
 
