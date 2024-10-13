@@ -1,6 +1,6 @@
 name: Agendar um Novo Evento!
 description: Utilize essa opção caso deseje adicionar um novo evento!
-title: "[Novo Evento]:"
+title: "[Novo Evento]: "
 labels: event/new
 body:
   - type: markdown
@@ -85,6 +85,17 @@ body:
         - Tocantins (TO)
     validations:
       required: false
+
+  - type: dropdown
+    id: event_year
+    attributes:
+      label: "Ano do Evento"
+      description: "Qual o ano que irá acontecer o evento?"
+      multiple: false
+      default: 0
+      options:
+        - "2024"
+        - "2025"
 
   - type: dropdown
     id: event_month
