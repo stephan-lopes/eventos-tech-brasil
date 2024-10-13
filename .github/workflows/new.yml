@@ -1,0 +1,37 @@
+name: Processar Evento
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  process_event:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Extraindo dados da issue
+        id: extract
+        run: |
+          echo "Extraindo valores da issue"
+          # Extraindo o corpo da issue
+          issue_body="${{ github.event.issue.body }}"
+
+          # Utilizando regex para capturar os valores de cada campo
+          event_name=$(echo "$issue_body" | grep -oP '(?<=id: event_name).*(?=\n)' | sed 's/.*- //')
+          event_url=$(echo "$issue_body" | grep -oP '(?<=id: event_url).*(?=\n)' | sed 's/.*- //')
+          event_type=$(echo "$issue_body" | grep -oP '(?<=id: event_type).*(?=\n)' | sed 's/.*- //')
+
+          echo "Nome do Evento: $event_name"
+          echo "URL do Evento: $event_url"
+          echo "Tipo de Evento: $event_type"
+
+          # Guardando os valores para passos posteriores
+          echo "::set-output name=event_name::$event_name"
+          echo "::set-output name=event_url::$event_url"
+          echo "::set-output name=event_type::$event_type"
+
+      - name: Exibir valores extraídos
+        run: |
+          echo "Nome do Evento: ${{ steps.extract.outputs.event_name }}"
+          echo "URL do Evento: ${{ steps.extract.outputs.event_url }}"
+          echo "Tipo de Evento: ${{ steps.extract.outputs.event_type }}"
