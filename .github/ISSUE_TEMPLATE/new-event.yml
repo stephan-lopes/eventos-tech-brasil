@@ -1,6 +1,6 @@
 name: Agendar um Novo Evento!
 description: Utilize essa opção caso deseje adicionar um novo evento!
-title: "(Atenção: O Título da Issue é gerado automáticamente)"
+title: "(Atenção: O Título da Issue é gerado automáticamente. Sendo assim, não precisa definir um título manualmente aqui.)"
 labels: evento/novo-evento
 body:
   - type: markdown
