@@ -27,7 +27,7 @@ jobs:
           event_type=$(get_event_values "$event_info" 'Modalidade do Evento')
           event_city=$(get_event_values "$event_info" 'Cidade do Evento')
           event_state=$(get_event_values "$event_info" 'Estado Federativo do Evento')
-          envet_year=$(get_event_values "$event_info" 'Ano do Evento')
+          event_year=$(get_event_values "$event_info" 'Ano do Evento')
           event_month=$(get_event_values "$event_info" 'Mês do Evento')
           event_day=$(get_event_values "$event_info" 'Dia do Evento')
 
