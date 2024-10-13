@@ -20,6 +20,14 @@ jobs:
           event_month=$(echo "${{ github.event.issue.body }}" | grep 'Mês do Evento' | sed 's/^.*: //')
           event_day=$(echo "${{ github.event.issue.body }}" | grep 'Dia do Evento' | sed 's/^.*: //')
 
+          echo $event_name
+          echo $event_url
+          echo $event_type
+          echo $event_city
+          echo $event_state
+          echo $event_month
+          echo $event_day
+
           echo "::set-output name=event_name::$event_name"
           echo "::set-output name=event_url::$event_url"
           echo "::set-output name=event_type::$event_type"
