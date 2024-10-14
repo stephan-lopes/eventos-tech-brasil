@@ -96,7 +96,7 @@ jobs:
           year_start="<!-- ANO${year}:START -->"
           year_end="<!-- ANO${year}:END -->"
 
-          content=$(<"$README_PATH")
+          ls -l
 
           echo "$month"
           echo "$month_start"
