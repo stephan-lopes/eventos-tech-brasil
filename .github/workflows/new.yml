@@ -69,3 +69,24 @@ jobs:
             string="- ${day}: [${name}](${url,,}) - _$(capitalize_first_letter "${city,,}")/$(extract_abbreviation "${state}")_ ![${type,,}]"
             echo $string
           fi
+
+          echo "string=$string" >> $GITHUB_OUTPUT
+
+      - name: Modifica o README com bases nos valores informados
+        env:
+          README_PATH: "./README.md"
+        run: |
+
+          get_month_name() {
+            local input="$1"
+            echo "$input" | sed -E 's/ *\([^)]*\)//g; s/^[ ]*//; s/[ ]*$//' | tr '[:upper:]' '[:lower:]'
+          }
+
+
+          month=$(get_month_name "${{ steps.event_details.outputs.event_month }}")
+          month_start="<!-- $(tr '[:lower:]' '[:upper:]' <<< "$month"):START -->"
+          month_end="<!-- $(tr '[:lower:]' '[:upper:]' <<< "$month"):END -->"
+
+          echo "$month"
+          echo "$month_start"
+          echo "$month_end"
