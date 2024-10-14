@@ -136,23 +136,33 @@ jobs:
 
           new_event="${{ steps.create_string.outputs.string }}"
 
-          inserted=0
-
-          while IFS= read -r line; do
-              # Captura o dia atual
-              if [[ $line =~ ^- ]]; then
-                  current_day=$(echo "$line" | awk '{print $2}' | tr -d ':')
-
-                  if [ "$inserted" -eq 0 ] && [ "$current_day" -gt "$day" ]; then
-                      updated_section+="$new_event\n"  # Insere antes do primeiro dia maior que o novo
-                      inserted=1  # Marca que já inseriu o evento
-                  fi
-              fi
-              updated_section+="$line\n"  # Imprime a linha atual
-          done <<< "$events_section"
-
-          if [ "$inserted" -eq 0 ]; then
-            updated_section+="$new_event\n"
+          # Insere o novo evento na posição correta
+          if [[ $(echo "$events_section" | wc -l) -eq 1 ]]; then
+              # Se a seção de eventos estiver vazia, apenas adiciona
+              updated_section="$new_event"
+          else
+              # Insere na posição correta
+              updated_section=$(echo "$events_section" | awk -v new_event="$new_event" -v day="$day" '
+                  BEGIN {
+                      insert = 0;
+                  }
+                  {
+                      # Captura o dia atual
+                      if (match($0, /^- [0-9]+:/, arr)) {
+                          current_day = substr(arr[0], 3, length(arr[0]) - 2);
+                          if (current_day > day && insert == 0) {
+                              print new_event;  # Insere antes do primeiro dia maior que o novo
+                              insert = 1;  # Indica que o evento foi inserido
+                          }
+                      }
+                      print $0;  # Imprime a linha atual
+                  }
+                  END {
+                      if (insert == 0) {
+                          print new_event;  # Se não foi inserido, adiciona no final
+                      }
+                  }
+              ')
           fi
 
           echo "$updated_section"
