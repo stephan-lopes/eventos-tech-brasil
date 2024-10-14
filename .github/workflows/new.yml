@@ -58,9 +58,11 @@ jobs:
           type="Presencial"
           month=$(extract_abbreviation "${{ steps.event_details.outputs.event_month }}")
 
+          if [[ $day == "_No response_" ]]; then
+            month=TBA
+          fi
 
-
-          if [[ $month == "TBA" || $day == "_No response_" ]]; then
+          if [[ $month == "TBA" ]]; then
             string="- ${month}: [${name}](${url,,}) - _$(capitalize_first_letter "${city,,}")/$(extract_abbreviation "${state}")_ ![${type,,}]"
             echo $string
           else
