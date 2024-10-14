@@ -103,6 +103,12 @@ jobs:
 
           content=$(<"$README_PATH")
 
+          echo "$month"
+          echo "$month_start"
+          echo "$month_end"
+          echo "$year_start"
+          echo "$year_end"
+
           section_year_start=$(grep -n "$year_start" "$README_PATH" | cut -d: -f1)
           section_year_end=$(grep -n "$year_end" "$README_PATH" | cut -d: -f1)
 
