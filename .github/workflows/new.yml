@@ -94,7 +94,11 @@ jobs:
           year_start="<!-- ANO${year}:START -->"
           year_end="<!-- ANO${year}:END -->"
 
-          if [[ $day == "_No response_" || $month == "to be announced" ]]; then
+          if  [[ $day == "_No response_" ]]; then
+            month="to be announced"
+          fi
+
+          if [[ $month == "to be announced" ]]; then
             month_start="<!-- $(tr '[:lower:]' '[:upper:]' <<< "$month"):START -->"
             month_end="<!-- $(tr '[:lower:]' '[:upper:]' <<< "$month"):END -->"
             year_start="<!-- TBA:START -->"
@@ -102,12 +106,6 @@ jobs:
           fi
 
           content=$(<"$README_PATH")
-
-          echo "$month"
-          echo "$month_start"
-          echo "$month_end"
-          echo "$year_start"
-          echo "$year_end"
 
           section_year_start=$(grep -n "$year_start" "$README_PATH" | cut -d: -f1)
           section_year_end=$(grep -n "$year_end" "$README_PATH" | cut -d: -f1)
@@ -134,8 +132,6 @@ jobs:
 
           section_month_end=$((section_month_end + section_month_start - 1))
           events_section=$(sed -n "${section_month_start},${section_month_end}p" "$README_PATH")
-
-
 
           echo "$month"
           echo "$month_start"
