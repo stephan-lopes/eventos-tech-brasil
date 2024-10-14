@@ -65,4 +65,5 @@ jobs:
             echo $string
           else
             string="- ${month}: [${name}](${url,,}) - _$(capitalize_first_letter "${city,,}")/$(extract_abbreviation "${state}")_ ![${type,,}]"
+            echo $string
           fi
