@@ -60,10 +60,10 @@ jobs:
 
 
 
-          if [[ $month == "TBA" || $day == "_No_response_" ]]; then
-            string="- ${day}: [${name}](${url,,}) - _$(capitalize_first_letter "${city,,}")/$(extract_abbreviation "${state}")_ ![${type,,}]"
+          if [[ $month == "TBA" || $day == "_No response_" ]]; then
+            string="- ${month}: [${name}](${url,,}) - _$(capitalize_first_letter "${city,,}")/$(extract_abbreviation "${state}")_ ![${type,,}]"
             echo $string
           else
-            string="- ${month}: [${name}](${url,,}) - _$(capitalize_first_letter "${city,,}")/$(extract_abbreviation "${state}")_ ![${type,,}]"
+            string="- ${day}: [${name}](${url,,}) - _$(capitalize_first_letter "${city,,}")/$(extract_abbreviation "${state}")_ ![${type,,}]"
             echo $string
           fi
