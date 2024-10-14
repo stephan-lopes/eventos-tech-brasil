@@ -3,9 +3,12 @@ on:
   issues:
     types: [opened]
 
+env:
+  novo_evento: "evento/novo-evento"
+
 jobs:
   change-issue-name:
-    if: contains(github.event.issue.labels.*.name, 'evento/novo-evento')
+    if: contains(github.event.issue.labels.*.name, '$novo_evento')
     runs-on: ubuntu-latest
     permissions:
       issues: write
