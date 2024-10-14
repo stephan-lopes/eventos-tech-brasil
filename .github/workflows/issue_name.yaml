@@ -5,7 +5,7 @@ on:
 
 jobs:
   change-issue-name:
-    if: contains(github.event.issue.labels.*.name, "evento/novo-evento")
+    if: contains(github.event.issue.labels.*.name, 'evento/novo-evento')
     runs-on: ubuntu-latest
     permissions:
       issues: write
