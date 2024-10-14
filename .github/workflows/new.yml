@@ -86,7 +86,11 @@ jobs:
           month=$(get_month_name "${{ steps.event_details.outputs.event_month }}")
           month_start="<!-- $(tr '[:lower:]' '[:upper:]' <<< "$month"):START -->"
           month_end="<!-- $(tr '[:lower:]' '[:upper:]' <<< "$month"):END -->"
+          year_start="<!-- ANO${year}:START -->"
+          year_end="<!-- ANO${year}:END -->"
 
           echo "$month"
           echo "$month_start"
           echo "$month_end"
+          echo "$year_start"
+          echo "$year_end"
