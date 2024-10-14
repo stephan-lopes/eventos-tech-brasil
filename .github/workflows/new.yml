@@ -72,6 +72,9 @@ jobs:
 
           echo "string=$string" >> $GITHUB_OUTPUT
 
+      - name: Checkout do Repositório
+        uses: actions/checkout@v4
+
       - name: Modifica o README com bases nos valores informados
         env:
           README_PATH: "./README.md"
@@ -96,7 +99,7 @@ jobs:
           year_start="<!-- ANO${year}:START -->"
           year_end="<!-- ANO${year}:END -->"
 
-          ls -l
+          content=$(<"$README_PATH")
 
           echo "$month"
           echo "$month_start"
