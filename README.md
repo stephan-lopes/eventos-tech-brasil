@@ -153,9 +153,9 @@ Para contribuir você precisa adicionar as seguintes informações: **data, nome
 <!-- ANO2025:END -->
 
 ## TBA: To Be Announced
-
 <!-- Essa seção são de eventos que estão previstos para acontecer no ano mas ainda não tem mês, ou dia definidos -->
 <!-- TBA:START -->
+<!-- TO BE ANNOUNCED:START -->
 
 - TBA: [TDC Summit Brasília](https://thedevconf.com/tdc/2024/summit-brasilia/) - _Brasília/DF_ ![híbrido]
 - TBA: [TDC Summit Recife](https://thedevconf.com/tdc/2024/summit-recife/) - _Recife/PE_ ![híbrido]
@@ -167,6 +167,7 @@ Para contribuir você precisa adicionar as seguintes informações: **data, nome
 - TBA: [XXIII Simpósio Brasileiro sobre Fatores Humanos em Sistemas Computacionais (IHC)](https://www.sbc.org.br/eventos/calendario-de-eventos/evento/657/xxiii-simposio-brasileiro-sobre-fatores-humanos-em-sistemas-computacionais-ihc) - _Brasília/DF_ ![presencial]
 - TBA: [XXX Simpósio Brasileiro de Sistemas Multimídia e Web (WebMedia 2024)](https://www.sbc.org.br/eventos/calendario-de-eventos/evento/669/xxx-simposio-brasileiro-de-sistemas-multimidia-e-web-webmedia-2024) - _Juiz de Fora/MG_ ![presencial]
 
+<!-- TO BE ANNOUNCED:END -->
 <!-- TBA:END -->
 
 ## Eventos dos anos anteriores
