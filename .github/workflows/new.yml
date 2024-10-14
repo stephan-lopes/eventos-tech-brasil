@@ -96,8 +96,11 @@ jobs:
           year_start="<!-- ANO${year}:START -->"
           year_end="<!-- ANO${year}:END -->"
 
+          content=$(<"$README_PATH")
+
           echo "$month"
           echo "$month_start"
           echo "$month_end"
           echo "$year_start"
           echo "$year_end"
+          echo "$content"
