@@ -1,7 +1,7 @@
-name: Agendar um Novo Evento!
+name: Agendar um Novo Evento Presencial!
 description: Utilize essa opção caso deseje adicionar um novo evento!
 title: "(Atenção: O Título da Issue é gerado automáticamente. Sendo assim, não precisa definir um título manualmente aqui.)"
-labels: evento/novo-evento
+labels: cadastrar/evento-presencial
 body:
   - type: markdown
     attributes:
@@ -31,19 +31,6 @@ body:
     validations:
       required: true
 
-  - type: dropdown
-    id: event_type
-    attributes:
-      label: Modalidade do Evento
-      description: "Qual será a modalidade do evento? Opções disponíveis: Presencial, Online e Híbrido"
-      multiple: false
-      options:
-        - Presencial
-        - Online
-        - Híbrido
-    validations:
-      required: true
-
   - type: markdown
     attributes:
       value: |
@@ -52,21 +39,20 @@ body:
   - type: input
     id: event_city
     attributes:
-      label: "[Híbrido/Presencial] Cidade do Evento"
-      description: Em qual cidade irá acontecer o evento? (Este campo é obrigatório para modalidades Híbrido e Presencial)
+      label: "Cidade do Evento"
+      description: Em qual cidade irá acontecer o evento?
       placeholder: "Ex: São Paulo"
     validations:
-      required: false
+      required: true
 
   - type: dropdown
     id: event_state
     attributes:
-      label: "[Híbrido/Presencial] Estado Federativo do Evento"
-      description: "Informe o estado federativo onde o evento ocorrerá. (Este campo é obrigatório para modalidades Híbrido e Presencial)"
+      label: "Estado Federativo do Evento"
+      description: Em qual estado federativo irá acontecer o evento?
       multiple: false
-      default: 0
+      default: 24
       options:
-        - N/A
         - Acre (AC)
         - Alagoas (AL)
         - Amapá (AP)
@@ -95,7 +81,7 @@ body:
         - Sergipe (SE)
         - Tocantins (TO)
     validations:
-      required: false
+      required: true
 
   - type: markdown
     attributes:
@@ -112,6 +98,8 @@ body:
       options:
         - "2024"
         - "2025"
+    validations:
+      required: true
 
   - type: dropdown
     id: event_month
