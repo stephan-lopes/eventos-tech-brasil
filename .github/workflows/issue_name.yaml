@@ -8,7 +8,7 @@ env:
 
 jobs:
   change-issue-name:
-    if: contains(github.event.issue.labels.*.name, '$novo_evento')
+    if: contains(github.event.issue.labels.*.name, env.novo_evento)
     runs-on: ubuntu-latest
     permissions:
       issues: write
