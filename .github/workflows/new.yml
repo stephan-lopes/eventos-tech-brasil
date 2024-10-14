@@ -39,6 +39,7 @@ jobs:
           echo "event_day=$event_day" >> $GITHUB_OUTPUT
 
       - name: Criar evento com base nos valores inseridos
+        id: create_string
         run: |
 
           capitalize_first_letter() {
@@ -132,6 +133,37 @@ jobs:
 
           section_month_end=$((section_month_end + section_month_start - 1))
           events_section=$(sed -n "${section_month_start},${section_month_end}p" "$README_PATH")
+
+          new_event="${{ steps.create_string.outputs.string }}"
+
+          if [[ $(echo "$events_section" | wc -l) -eq 1 ]]; then
+              updated_section="$new_event"
+          else
+              updated_section=$(echo "$events_section" | awk -v new_event="$new_event" -v day="$day" '
+                  BEGIN {
+                      insert = 0;
+                  }
+                  {
+                      if (match($0, /^- [0-9]+:/, arr)) {
+                          current_day = substr(arr[0], 3, length(arr[0]) - 2);
+                          if (current_day > day && insert == 0) {
+                              print new_event; 
+                              insert = 1; 
+                          }
+                      }
+                      print $0;
+                  }
+                  END {
+                      if (insert == 0) {
+                          print new_event;
+                      }
+                  }
+              ')
+          fi
+
+          new_content=$(sed -e "${section_month_start},${section_month_end}c\\$updated_section" "$README_PATH")
+
+          echo "$new_content"
 
           echo "$month"
           echo "$month_start"
