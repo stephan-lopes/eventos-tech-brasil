@@ -106,7 +106,7 @@ Para contribuir você precisa adicionar as seguintes informações: **data, nome
 
 <!-- ANO2024:END -->
 
-## Eventos 2025
+## Eventos em 2025
 <!-- ANO2025:START -->
 
 <!-- JANEIRO:START -->
