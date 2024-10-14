@@ -56,5 +56,5 @@ jobs:
 
           if [[  $type == "Presencial" ]]; then
             string="- ${day}: [${name}](${url,,}) - _${city}/${state}_ ![${type,,}]"
-            echo $strings
+            echo $string
           fi
