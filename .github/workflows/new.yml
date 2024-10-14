@@ -127,10 +127,13 @@ jobs:
           fi
 
           section_month_end=$((section_month_end + section_month_start - 1))
+          events_section=$(sed -n "${section_month_start},${section_month_end}p" "$README_PATH")
+
+
 
           echo "$month"
           echo "$month_start"
           echo "$month_end"
           echo "$year_start"
           echo "$year_end"
-          echo "$content"
+          echo "$events_section"
