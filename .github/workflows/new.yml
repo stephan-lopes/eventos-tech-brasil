@@ -161,7 +161,7 @@ jobs:
               ')
           fi
 
-          echo $updated_section
+          echo "$updated_section"
           # new_content=$(sed -e "${section_month_start},${section_month_end}c\\$updated_section" "$README_PATH")
 
           echo "$new_content"
