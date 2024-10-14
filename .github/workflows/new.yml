@@ -50,11 +50,11 @@ jobs:
           day="${{ steps.event_details.outputs.event_day }}"
           name="${{ steps.event_details.outputs.event_name }}"
           url="${{ steps.event_details.outputs.event_url }}"
-          city=$(capitalize_first_letter "${{ steps.event_details.outputs.event_city }}")
+          city="${{ steps.event_details.outputs.event_city }}"
           state="${{ steps.event_details.outputs.event_state }}"
           type="${{ steps.event_details.outputs.event_type }}"
 
           if [[  $type == "Presencial" ]]; then
-            string="- ${day}: [${name}](${url,,}) - _${city}/${state}_ ![${type,,}]"
+            string="- ${day}: [${name}](${url,,}) - _$(captalize_first_letter ${city,,})/${state}_ ![${type,,}]"
             echo $string
           fi
