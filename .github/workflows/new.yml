@@ -47,15 +47,14 @@ jobs:
             echo "$1" | awk '{ for(i=1;i<=NF;i++) $i=toupper(substr($i,1,1)) substr($i,2); }1'
           }
 
-
           day=${{ steps.event_details.outputs.event_day }}
           name=${{ steps.event_details.outputs.event_name }}
-          url=${{ toLower(steps.event_details.outputs.event_url) }}
+          url=${{ steps.event_details.outputs.event_url }}
           city=$(capitalize_first_letter "${{ steps.event_details.outputs.event_city }}")
           state=${{ steps.event_details.outputs.event_state }}
-          type=${{ toLower(steps.event_details.outputs.event_type) }}
+          type=${{ steps.event_details.outputs.event_type }}
 
           if [[  $type == "Presencial" ]]; then
-            string="- ${day}: [${name}]($url) - _${city}/${state}_ ![$type]"
+            string="- ${day}: [${name}](${url,,}) - _${city}/${state}_ ![${type,,}]"
             echo $strings
           fi
