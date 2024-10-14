@@ -55,6 +55,6 @@ jobs:
           type="${{ steps.event_details.outputs.event_type }}"
 
           if [[  $type == "Presencial" ]]; then
-            string="- ${day}: [${name}](${url,,}) - _$(captalize_first_letter ${city,,})/${state}_ ![${type,,}]"
+            string="- ${day}: [${name}](${url,,}) - _$(capitalize_first_letter ${city,,})/${state}_ ![${type,,}]"
             echo $string
           fi
