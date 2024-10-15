@@ -155,30 +155,9 @@ jobs:
           events_section=$(sed -n "$((section_month_start + 1)),$((section_month_end - 1))p" "$README_PATH")
 
 
-          new_event="${{ steps.create_string.outputs.string }}"
 
-          # Aplicar a função ao 'new_event'
-          date_part=$(echo "$new_event" | sed -n 's/^- \([^:]*\):.*/\1/p')
-          if [[ -n "$date_part" ]]; then
-              formatted_date=$(format_event_date "$date_part")
-              new_event=$(echo "$new_event" | sed "s/^-\ $date_part:/- $formatted_date:/")
-          fi
-
-
-          # Processar 'events_section' para formatar as datas
-          formatted_events_section=$(echo "$events_section" | while read -r line; do
-              # Verificar se a linha é um evento
-              if [[ "$line" =~ ^- ]]; then
-                  date_part=$(echo "$line" | sed -n 's/^- \([^:]*\):.*/\1/p')
-                  if [[ -n "$date_part" ]]; then
-                      formatted_date=$(format_event_date "$date_part")
-                      line=$(echo "$line" | sed "s/^-\ $date_part:/- $formatted_date:/")
-                  fi
-              fi
-              echo "$line"
-          done)
-
-          events_section="$formatted_events_section"
+          event="${{ steps.create_string.outputs.string }}"
+          new_event=$(format_event_date "$event")
 
           # Insere o novo evento na posição correta considerando múltiplos dias
           if [[ $(echo "$events_section" | wc -l) -le 2 ]]; then
