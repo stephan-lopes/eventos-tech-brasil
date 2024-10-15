@@ -51,6 +51,22 @@ jobs:
               echo "$input" | sed -E 's/.*\(([^)]+)\).*/\1/'
           }
 
+          replace_last_comma_before_colon() {
+              local line="$1"
+              # Separa a linha em prefixo (antes do primeiro dois-pontos) e sufixo (após o primeiro dois-pontos)
+              local date_part="${line%%:*}"
+              local rest="${line#"$date_part:"}"
+              
+              date_part="${date_part#- }"
+              if [[ "$date_part" == *","* ]]; then
+                  local new_date_part="$(echo "$date_part" | sed 's/,\s*\([^,]*\)$/ e \1/')"
+                  echo "- $new_date_part:$rest"
+              else
+                  echo "$line"
+              fi
+          }
+
+
           day="${{ steps.event_details.outputs.event_day }}"
           name="${{ steps.event_details.outputs.event_name }}"
           url="${{ steps.event_details.outputs.event_url }}"
@@ -71,6 +87,8 @@ jobs:
             echo $string
           fi
 
+          string=$(replace_last_comma_before_colon "$string")
+
           echo "string=$string" >> $GITHUB_OUTPUT
 
       - name: Checkout do Repositório
@@ -85,22 +103,6 @@ jobs:
             local input="$1"
             echo "$input" | sed -E 's/ *\([^)]*\)//g; s/^[ ]*//; s/[ ]*$//' | tr '[:upper:]' '[:lower:]'
           }
-
-          replace_last_comma_before_colon() {
-              local line="$1"
-              # Separa a linha em prefixo (antes do primeiro dois-pontos) e sufixo (após o primeiro dois-pontos)
-              local date_part="${line%%:*}"
-              local rest="${line#"$date_part:"}"
-              
-              date_part="${date_part#- }"
-              if [[ "$date_part" == *","* ]]; then
-                  local new_date_part="$(echo "$date_part" | sed 's/,\s*\([^,]*\)$/ e \1/')"
-                  echo "- $new_date_part:$rest"
-              else
-                  echo "$line"
-              fi
-          }
-
 
           day="${{ steps.event_details.outputs.event_day }}"
           month=$(get_month_name "${{ steps.event_details.outputs.event_month }}")
@@ -152,8 +154,7 @@ jobs:
 
 
 
-          event="${{ steps.create_string.outputs.string }}"
-          new_event=$(replace_last_comma_before_colon "$event")
+          new_event="${{ steps.create_string.outputs.string }}"
 
           # Insere o novo evento na posição correta considerando múltiplos dias
           if [[ $(echo "$events_section" | wc -l) -le 2 ]]; then
