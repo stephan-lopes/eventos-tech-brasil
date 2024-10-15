@@ -139,7 +139,7 @@ jobs:
           # Insere o novo evento na posição correta
           if [[ $(echo "$events_section" | wc -l) -eq 1 ]]; then
               # Se a seção de eventos estiver vazia, apenas adiciona
-              updated_section="$new_event"
+              updated_section="$events_section"$'\n'"$new_event"
           else
               # Insere na posição correta
               updated_section=$(echo "$events_section" | awk -v new_event="$new_event" -v day="$day" '
@@ -148,9 +148,9 @@ jobs:
                   }
                   {
                       # Captura o dia atual
-                      if (match($0, /^- [0-9]+:/, arr)) {
-                          current_day = substr(arr[0], 3, length(arr[0]) - 2);
-                          if (current_day > day && insert == 0) {
+                      if (match($0, /^- ([0-9]+):/, arr)) {
+                          current_day = arr[1];
+                          if (current_day + 0 > day + 0 && insert == 0) {
                               print new_event;  # Insere antes do primeiro dia maior que o novo
                               insert = 1;  # Indica que o evento foi inserido
                           }
@@ -165,8 +165,12 @@ jobs:
               ')
           fi
 
-          echo "$updated_section"
-          # new_content=$(sed -e "${section_month_start},${section_month_end}c\\$updated_section" "$README_PATH")
+          # Substitui a seção antiga pela atualizada no conteúdo total
+          new_content=$(sed "${section_month_start},${section_month_end}c\\
+          $updated_section" "$README_PATH")
+
+          # Escreve o novo conteúdo no arquivo README.md
+          echo "$new_content"
 
           # echo "$new_content"
 
