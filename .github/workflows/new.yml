@@ -181,42 +181,54 @@ jobs:
           events_section="$formatted_events_section"
 
           # Insere o novo evento na posição correta considerando múltiplos dias
-          if [[ $(echo "$events_section" | wc -l) -le 1 ]]; then
+          if [[ $(echo "$events_section" | wc -l) -le 2 ]]; then
               # Se a seção de eventos estiver vazia, apenas adiciona o novo evento
               updated_section="$new_event"
           else
               # Insere na posição correta
-              updated_section=$(echo -e "$events_section\n$new_event" | awk '
-                  function parse_event_line(line,   date_str, days_arr, start_day, num_days) {
-                      # Extrai a data
-                      if (match(line, /^- ([^:]+):/, arr)) {
+              updated_section=$(echo "$events_section" | awk -v new_event="$new_event" '
+                  function parse_event_line(line) {
+                      # Extrai a data e o número de dias
+                      if (match(line, /^- ([0-9]+( e [0-9]+)*):/, arr)) {
                           date_str = arr[1]
-                          gsub(/ e /, " ", date_str)
-                          gsub(/, /, " ", date_str)
-                          split(date_str, days_arr, " ")
-                          start_day = days_arr[1] + 0
-                          num_days = length(days_arr)
+                          split(date_str, date_arr, " e ")
+                          start_day = date_arr[1] + 0
+                          num_days = length(date_arr)
                           return start_day ":" num_days
                       }
                       return ""
+                  }
+                  BEGIN {
+                      insert = 0
+                      new_info = parse_event_line(new_event)
+                      split(new_info, new_vals, ":")
+                      new_start_day = new_vals[1] + 0
+                      new_num_days = new_vals[2] + 0
                   }
                   {
                       line_info = parse_event_line($0)
                       if (line_info != "") {
                           split(line_info, vals, ":")
-                          start_day = vals[1] + 0
-                          num_days = vals[2] + 0
-                          events[NR] = $0
-                          event_start_days[NR] = start_day
-                          event_lengths[NR] = num_days
+                          current_start_day = vals[1] + 0
+                          current_num_days = vals[2] + 0
+
+                          if (insert == 0) {
+                              if (new_start_day < current_start_day) {
+                                  print new_event
+                                  insert = 1
+                              } else if (new_start_day == current_start_day) {
+                                  if (new_num_days < current_num_days) {
+                                      print new_event
+                                      insert = 1
+                                  }
+                              }
+                          }
                       }
+                      print $0
                   }
                   END {
-                      # Ordenar os índices dos eventos
-                      n = asort(event_start_days, sorted_indices)
-                      for (i = 1; i <= n; i++) {
-                          idx = sorted_indices[i]
-                          print events[idx]
+                      if (insert == 0) {
+                          print new_event
                       }
                   }
               ')
