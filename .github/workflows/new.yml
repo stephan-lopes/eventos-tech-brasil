@@ -88,11 +88,13 @@ jobs:
 
           replace_last_comma_before_colon() {
               local line="$1"
-              # Separa a linha em prefixo (antes dos dois pontos) e sufixo (após os dois pontos)
-              local prefix="${line%:*}"
+              # Separa a linha em prefixo (antes do primeiro dois-pontos) e sufixo (após o primeiro dois-pontos)
+              local prefix="${line%%:*}"
               local suffix="${line#"$prefix:"}"
               # Substitui a última vírgula no prefixo por ' e'
-              prefix="${prefix%*,}, e${prefix##*,}"
+              if [[ "$prefix" == *","* ]]; then
+                  prefix="${prefix%*,}, e${prefix##*,}"
+              fi
               # Recompõe a linha
               echo "$prefix:$suffix"
           }
