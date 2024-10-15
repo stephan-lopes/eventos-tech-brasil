@@ -86,23 +86,15 @@ jobs:
             echo "$input" | sed -E 's/ *\([^)]*\)//g; s/^[ ]*//; s/[ ]*$//' | tr '[:upper:]' '[:lower:]'
           }
 
-          format_event_date() {
-              local date_str="$1"
-              date_str=$(echo "$date_str" | sed 's/ *[e,] */ /g')
-              local days=($date_str)
-              local num_days=${#days[@]}
-              if (( num_days == 1 )); then
-                  echo "${days[0]}"
-              elif (( num_days == 2 )); then
-                  echo "${days[0]} e ${days[1]}"
-              else
-                  local formatted=""
-                  for ((i=0; i<num_days-1; i++)); do
-                      formatted+="${days[i]}, "
-                  done
-                  formatted+="e ${days[num_days-1]}"
-                  echo "$formatted"
-              fi
+          replace_last_comma_before_colon() {
+              local line="$1"
+              # Separa a linha em prefixo (antes dos dois pontos) e sufixo (após os dois pontos)
+              local prefix="${line%:*}"
+              local suffix="${line#"$prefix:"}"
+              # Substitui a última vírgula no prefixo por ' e'
+              prefix="${prefix%*,}, e${prefix##*,}"
+              # Recompõe a linha
+              echo "$prefix:$suffix"
           }
 
 
@@ -157,7 +149,7 @@ jobs:
 
 
           event="${{ steps.create_string.outputs.string }}"
-          new_event=$(format_event_date "$event")
+          new_event=$(replace_last_comma_before_colon "$event")
 
           # Insere o novo evento na posição correta considerando múltiplos dias
           if [[ $(echo "$events_section" | wc -l) -le 2 ]]; then
