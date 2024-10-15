@@ -165,12 +165,31 @@ jobs:
               ')
           fi
 
-          # Substitui a seção antiga pela atualizada no conteúdo total
-          new_content=$(sed "${section_month_start},${section_month_end}c\\
-          $updated_section" "$README_PATH")
+          # Atualiza o arquivo README.md usando awk
+          awk -v start_marker="$month_start" -v end_marker="$month_end" -v replacement="$updated_section" '
+              BEGIN { in_section=0 }
+              {
+                  if ($0 ~ start_marker) {
+                      print $0
+                      in_section=1
+                      next
+                  }
+                  if ($0 ~ end_marker) {
+                      in_section=0
+                      print replacement
+                      print $0
+                      next
+                  }
+                  if (!in_section) {
+                      print $0
+                  }
+              }
+          ' "$README_PATH" > "$README_PATH.tmp"
 
-          # Escreve o novo conteúdo no arquivo README.md
-          echo "$new_content"
+          # Substitui o arquivo original pelo atualizado
+          mv "$README_PATH.tmp" "$README_PATH"
+
+          cat $README_PATH
 
           # echo "$new_content"
 
