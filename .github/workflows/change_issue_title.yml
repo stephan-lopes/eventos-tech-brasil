@@ -41,6 +41,9 @@ jobs:
               archive_month=$(get_event_values "$event_info" 'Mês para ser Arquivado')
               archive_year=$(get_event_values "$event_info" 'Ano do Mês a ser Arquivado ou Ano a ser arquivado')
               
+              echo $archive_month
+              echo $archive_year
+
               issue_number="${{ github.event.issue.number }}"
               repo_name="${{ github.repository }}"
 
