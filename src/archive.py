@@ -65,8 +65,8 @@ def get_event_from_env():
     Recebe informações do evento de variáveis de ambiente configuradas no GitHub Actions.
     """
     return {
-        "ano": int(os.getenv("event_year", 0)),
-        "mes": os.getenv("event_month", "").strip().lower(),
+        "ano": int(os.getenv("archive_year", 0)),
+        "mes": os.getenv("archive_month", "").strip().lower(),
     }
 
 if __name__ == "__main__":
