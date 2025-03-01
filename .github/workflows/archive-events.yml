@@ -44,6 +44,9 @@ jobs:
           archive_month=$(get_event_values "$event_info" 'Mês a ser Arquivado')
           archive_year=$(get_event_values "$event_info" 'Ano do Mês a ser Arquivado / Ano a ser arquivado')
 
+          echo $archive_month
+          echo $archive_year
+
           if [[ $archive_month == "None" ]]; then
             archive_month=""
           fi
