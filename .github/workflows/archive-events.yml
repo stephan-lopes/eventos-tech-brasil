@@ -41,7 +41,7 @@ jobs:
             echo "$1" | awk '{ for(i=1;i<=NF;i++) $i=toupper(substr($i,1,1)) substr($i,2); }1'
           }
 
-          archive_month=$(get_event_values "$event_info" 'Mês a ser Arquivado')
+          archive_month=$(get_event_values "$event_info" 'Mês para ser Arquivado')
           archive_year=$(get_event_values "$event_info" 'Ano do Mês a ser Arquivado ou Ano a ser arquivado')
 
           echo $archive_month
