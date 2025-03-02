@@ -40,7 +40,7 @@ def archive_month(file_path, month_to_archive):
             for meses in eventos["meses"]:
                 if meses["mes"] == month:
                     print(meses)
-                    meses["arquivado"]: True
+                    meses["arquivado"] = True
                     print(meses)
     
     with open(file_path, "w", encoding="utf-8") as f:
