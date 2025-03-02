@@ -34,7 +34,7 @@ jobs:
             fi 
           fi
           
-          new_title="$event_name"
+          new_title="Agenda/Evento: $event_name"
 
           if echo "$LABELS" | grep -q 'name: arquivar'; then
               archive_month=$(get_event_value "$event_info" 'Mês para ser Arquivado')
@@ -44,9 +44,9 @@ jobs:
               repo_name="${{ github.repository }}"
 
               if [[ $archive_month == "None" ]]; then
-                new_title="Arquivar: ${archive_month}/${archive_year}"
-              else
                 new_title="Arquivar: ${archive_year}"
+              else
+                new_title="Arquivar: ${archive_month}/${archive_year}"
               fi
           fi 
 
@@ -58,4 +58,4 @@ jobs:
             -H "Authorization: token $GITHUB_TOKEN" \
             -H "Accept: application/vnd.github.v3+json" \
             https://api.github.com/repos/$repo_name/issues/$issue_number \
-            -d "{\"title\":\"Agenda/Evento: $new_title\"}"
+            -d "{\"title\":\"$new_title\"}"
