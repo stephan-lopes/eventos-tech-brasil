@@ -83,6 +83,7 @@ jobs:
           -B main \
           -H ${{ env.branch_name }} \
           --title "Arquivar: ${{ env.archive_month != '' && format('{0}/{1}', env.archive_month, env.archive_year) || env.archive_year }}" \
+          --body "Closes #${{ github.event.issue.number }}" \
           --label arquivar \
           --reviewer "${{ env.reviewers }}"
         env:
