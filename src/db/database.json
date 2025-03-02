@@ -2669,6 +2669,16 @@
               "tipo": "presencial"
             },
             {
+              "nome": "teste",
+              "data": [
+                "07"
+              ],
+              "url": "teste.com",
+              "cidade": "",
+              "uf": "",
+              "tipo": "online"
+            },
+            {
               "nome": "Hacking Na Web Day - Rio de Janeiro - 2025",
               "data": [
                 "13"
