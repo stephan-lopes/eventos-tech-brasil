@@ -2605,7 +2605,7 @@
         },
         {
           "mes": "agosto",
-          "arquivado": false,
+          "arquivado": true,
           "eventos": [
             {
               "nome": "Security Leaders Recife 2025",

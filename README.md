@@ -12,7 +12,7 @@ _Sabe aquele evento de tecnologia que você procura, mas não sabe onde encontra
 
 <h2 align="center">Selecione o mês do Evento</h2>
 <p class="navigation" align="center">
-<a href="#fevereiro">Fevereiro</a>・<a href="#março">Março</a>・<a href="#abril">Abril</a>・<a href="#maio">Maio</a>・<a href="#junho">Junho</a>・<a href="#julho">Julho</a>・<a href="#agosto">Agosto</a>・<a href="#setembro">Setembro</a>・<a href="#outubro">Outubro</a>・<a href="#novembro">Novembro</a></p>
+<a href="#fevereiro">Fevereiro</a>・<a href="#março">Março</a>・<a href="#abril">Abril</a>・<a href="#maio">Maio</a>・<a href="#junho">Junho</a>・<a href="#julho">Julho</a>・<a href="#setembro">Setembro</a>・<a href="#outubro">Outubro</a>・<a href="#novembro">Novembro</a></p>
 
 ## Contribuindo
 
@@ -155,12 +155,6 @@ Pode ser que ainda não tenhamos adicionado ao nosso calendário de eventos! Se 
 - 20, 21, 22, 23 e 24: [XLV Congresso da Sociedade Brasileira de Computação - CSBC 2025](https://csbc.sbc.org.br/2025/) - _Maceió/AL_ ![presencial]
 - 26: [Tech Woman 2025](https://www.instagram.com/techwoman.rec/) - _Recife, Pernambuco/PE_ ![presencial]
 <!-- JULHO:END -->
-### Agosto
-<!-- AGOSTO:START -->
-- 13: [Security Leaders Recife 2025](https://securityleaders.com.br/eventos/security-leaders-recife-2025/) - _Recife/PE_ ![presencial]
-- 16: [Hacking Na Web Day - Florianópolis - 2025](https://www.instagram.com/hackingnawebday/p/dayipmguorj/) - _Florianópolis/SC_ ![presencial]
-- 23: [Bxsec Security Experience](https://www.instagram.com/bxsec/) - _Santos/SP_ ![presencial]
-<!-- AGOSTO:END -->
 ### Setembro
 <!-- SETEMBRO:START -->
 - 01, 02, 03 e 04: [Simpósio Brasileiro de Cibersegurança - SBSeg 2025](https://sbseg2025.ppgia.pucpr.br/) - _Foz do Iguaçu/PR_ ![presencial]
