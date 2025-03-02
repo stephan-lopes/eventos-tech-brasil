@@ -14,11 +14,10 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          set -x
           # Extraindo o nome do evento do corpo da issue
           event_info="${{ github.event.issue.body }}"
 
-          LABELS="${{ toJson(github.event.issue.labels) }}
+          LABELS="${{ toJson(github.event.issue.labels) }}"
 
           get_event_value() {
             local event_info="$1"
@@ -40,9 +39,6 @@ jobs:
           if echo "$LABELS" | grep -q '"name":"arquivar"'; then
               archive_month=$(get_event_values "$event_info" 'Mês para ser Arquivado')
               archive_year=$(get_event_values "$event_info" 'Ano do Mês a ser Arquivado ou Ano a ser arquivado')
-              
-              echo $archive_month
-              echo $archive_year
 
               issue_number="${{ github.event.issue.number }}"
               repo_name="${{ github.repository }}"
