@@ -39,9 +39,7 @@ def archive_month(file_path, month_to_archive):
         if eventos["ano"] == year:
             for meses in eventos["meses"]:
                 if meses["mes"] == month:
-                    print(meses)
                     meses["arquivado"] = True
-                    print(meses)
     
     with open(file_path, "w", encoding="utf-8") as f:
       json.dump(db, f, indent=2, ensure_ascii=False)
