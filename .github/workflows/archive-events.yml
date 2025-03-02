@@ -44,9 +44,6 @@ jobs:
           archive_month=$(get_event_values "$event_info" 'Mês para ser Arquivado')
           archive_year=$(get_event_values "$event_info" 'Ano do Mês a ser Arquivado ou Ano a ser arquivado')
 
-          echo $archive_month
-          echo $archive_year
-
           if [[ $archive_month == "None" ]]; then
             archive_month=""
           fi
@@ -85,8 +82,7 @@ jobs:
           gh pr create \
           -B main \
           -H ${{ env.branch_name }} \
-          --title "Arquivar: ${{ env.archive_month != '' && format('{0}/{1}', env.archive_month, env.archive_year) || env.archive_year }}"
-          --body "Closes #${{ github.event.issue.number }}" \
+          --title "Arquivar: ${{ env.archive_month != '' && format('{0}/{1}', env.archive_month, env.archive_year) || env.archive_year }}" \
           --label arquivar \
           --reviewer "${{ env.reviewers }}"
         env:
