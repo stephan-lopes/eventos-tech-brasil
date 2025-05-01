@@ -11,6 +11,8 @@ permissions:
 env:
   reviewers: "pachicodes,stephan-lopes"
 
+run-name: "[Automação] Pull Request - Criar Evento/Agenda "
+
 jobs:
   archive-events:
     if: contains(github.event.issue.labels.*.name, 'arquivar')
