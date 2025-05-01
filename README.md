@@ -12,7 +12,7 @@ _Sabe aquele evento de tecnologia que você procura, mas não sabe onde encontra
 
 <h2 align="center">Selecione o mês do Evento</h2>
 <p class="navigation" align="center">
-<a href="#abril">Abril</a>・<a href="#maio">Maio</a>・<a href="#junho">Junho</a>・<a href="#julho">Julho</a>・<a href="#agosto">Agosto</a>・<a href="#setembro">Setembro</a>・<a href="#outubro">Outubro</a>・<a href="#novembro">Novembro</a></p>
+<a href="#abril">Abril</a>・<a href="#maio">Maio</a>・<a href="#junho">Junho</a>・<a href="#agosto">Agosto</a>・<a href="#setembro">Setembro</a>・<a href="#outubro">Outubro</a>・<a href="#novembro">Novembro</a></p>
 
 ## Contribuindo
 
@@ -96,14 +96,6 @@ Pode ser que ainda não tenhamos adicionado ao nosso calendário de eventos! Se 
 - 17 e 18: [UNIVERSO TOTVS 2025](https://eventos.totvs.com/event/universo-totvs-2025) - _São Paulo/SP_ ![presencial]
 - 20, 21 e 22: [Python Nordeste 2025](https://2025.pythonnordeste.org/) - _Teresina/PI_ ![presencial]
 <!-- JUNHO:END -->
-### Julho
-<!-- JULHO:START -->
-- 18 e 19: [Codecon Summit](https://codecon.dev/summit) - _Curitiba/PR_ ![presencial]
-- 18 e 19: [Codecon Summit 25](https://eventos.codecon.dev/codecon-summit-25/) - _Curitiba/PR_ ![presencial]
-- 19: [CajuSec](https://www.cajusec.com.br) - _Aracaju/SE_ ![presencial]
-- 20, 21, 22, 23 e 24: [XLV Congresso da Sociedade Brasileira de Computação - CSBC 2025](https://csbc.sbc.org.br/2025/) - _Maceió/AL_ ![presencial]
-- 26: [Tech Woman](https://www.instagram.com/techwoman.rec/) - _Recife/PE_ ![presencial]
-<!-- JULHO:END -->
 ### Agosto
 <!-- AGOSTO:START -->
 - 11, 12, 13, 14, 15, 16 e 17: [Semana de Dados](https://www.sympla.com.br/evento-online/semana-de-dados-2025/2791872?utm_source=github&utm_medium=link&utm_campaign=semanadedados_2025) ![online]
@@ -130,7 +122,6 @@ Pode ser que ainda não tenhamos adicionado ao nosso calendário de eventos! Se 
 - 18, 19 e 20: [AI Summit 2025](https://www.sympla.com.br/evento-online/ai-summit-2025/2905033?utm_source=github&utm_medium=link&utm_campaign=aisummit_2025) ![online]
 - 22: [Big Data Brazil Experience 2025](https://www.sympla.com.br/evento/big-data-brazil-experience-2025/2571633) - _São Paulo/SP_ ![presencial]
 - 26 e 27: [TDC Summit Brasília](https://thedevconf.com/tdc/2025/summit-brasilia/) - _Brasília/DF_ ![híbrido]
-- 29 e 30: [GambiConf](https://gambiconf.dev/) - _São Paulo/SP_ ![híbrido]
 <!-- NOVEMBRO:END -->
 <!-- ANO2025:END -->
 

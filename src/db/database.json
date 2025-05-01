@@ -7012,7 +7012,7 @@
         },
         {
           "mes": "julho",
-          "arquivado": false,
+          "arquivado": true,
           "eventos": [
             {
               "nome": "Codecon Summit",
