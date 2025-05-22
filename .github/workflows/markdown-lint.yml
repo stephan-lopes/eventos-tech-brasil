@@ -40,4 +40,4 @@ jobs:
           node-version: "14"
 
       - name: Run custom markdown validation
-        run: node .github/scripts/validateReadme.js
+        run: node src/validateReadme.js
