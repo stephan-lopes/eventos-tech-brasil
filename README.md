@@ -54,6 +54,7 @@ Pode ser que ainda não tenhamos adicionado ao nosso calendário de eventos! Se 
 - 24: [PGDay Blumenau 2025](https://pgdayblumenau.com.br/) - _Blumenau/SC_ ![presencial]
 - 24: [Dados, o começo delas [Mulheres em Dados + Thoughtworks]](https://mulheresemdados.rds.land/evento-dados-o-comeco-delas) - _São Paulo/SP_ ![presencial]
 - 24: [Meetup de Devs do Vale do Paranhana](https://www.sympla.com.br/evento/meetup-de-devs-do-vale-do-paranhana-n-7/2897384?_gl=1*1wfipvs*_gcl_au*mtiwnzi1mjq4ny4xnzqzndywody4*_ga*mzc5nji2nzmzlje3ndm0nja4njg.*_ga_kxh10sqtzf*mtc0mzk2mdg2nc4yljeumtc0mzk2mdk5os41os4wlje5ntkxotyxoda) - _Taquara/RS_ ![presencial]
+- 24: [Segurança em aplicações + Dataviz / Power BI](https://www.meetup.com/azure-talks/events/307913638) - _Campinas/SP_ ![presencial]
 - 24 e 25: [Formação Azure Specialist AZ-900 AZ-104 AZ-305](https://www.meetup.com/azureacademy/events/306775008) ![online]
 - 26: [Elas na IA: Aula 2: Introdução ao Aprendizado de Máquina e Inteligência Artificial](https://www.meetup.com/microsoft-reactor-sao-paulo/events/307306271) ![online]
 - 28: [Microsoft Reactor - Obtenha a certificação: prepare-se para o seu exame de Fabric e Q&A](https://www.meetup.com/microsoft-reactor-sao-paulo/events/307565106) ![online]
@@ -67,15 +68,20 @@ Pode ser que ainda não tenhamos adicionado ao nosso calendário de eventos! Se 
 ### Junho
 <!-- JUNHO:START -->
 - 03: [GitHub Actions: Automatizando IaC com Terraform](https://www.meetup.com/microsoft-reactor-sao-paulo/events/307305412) ![online]
+- 05: [Summit de IA](https://www.summitdeinteligenciaartificial.com/informa-es-do-evento-e-registro/summit-de-ia-2025) - _Joinvile/SC_ ![presencial]
 - 07: [Hacking Na Web Day - Belo Horizonte - 2025](https://www.instagram.com/hackingnawebday/p/dayipmguorj/) - _Belo Horizonte/MG_ ![presencial]
 - 07: [Azure Synapse Analytics, Fabric e Data Factory Day - ETL e BIG Data](https://www.meetup.com/azureacademy/events/306775025) ![online]
 - 09: [Criando aplicações com o Azure AI Agent Service](https://www.meetup.com/microsoft-reactor-sao-paulo/events/307788495) ![online]
+- 09, 10, 11, 12 e 13: [Semana Carreira Tech FIAP + Alura](https://carreiratech.fiap.com.br/?utm_source=meetup&utm_medium=ativacao_meetup&utm_campaign=semana_carreira_tech_2025) ![online]
 - 10: [GitHub Actions: Reusabilidade](https://www.meetup.com/microsoft-reactor-sao-paulo/events/307305430) ![online]
 - 10 e 11: [Jornada de Engenharia de Dados](https://www.sympla.com.br/evento-online/jornada-de-engenharia-de-dados-2025/2897548?utm_source=github&utm_medium=link&utm_campaign=jornadadeengenhariadedados_2025) ![online]
 - 11, 12 e 13: [TDC Floripa](https://thedevconf.com/tdc/2025/florianopolis/) - _Florianópolis/SC_ ![híbrido]
+- 17: [O Melhor do Microsoft Build](https://www.meetup.com/microsoft-reactor-sao-paulo/events/307803937) ![online]
 - 17 e 18: [UNIVERSO TOTVS 2025](https://eventos.totvs.com/event/universo-totvs-2025) - _São Paulo/SP_ ![presencial]
 - 20, 21 e 22: [Python Nordeste 2025](https://2025.pythonnordeste.org/) - _Teresina/PI_ ![presencial]
+- 24: [Boas práticas para dominar o GitHub Copilot Chat com Cyynthia Zanoni](https://www.meetup.com/microsoft-reactor-sao-paulo/events/307865224) ![online]
 - 25: [cTENcf Santa Catarina: 10 Anos de Cloud Native](https://community.cncf.io/events/details/cncf-cloud-native-santa-catarina-presents-ctencf-santa-catarina-10-anos-de-cloud-native/) - _Florianópolis/SC_ ![presencial]
+- 26: [Integrações Práticas com MCP Servers no VS Code e GitHub Copilot com Cynthia Zanoni](https://www.meetup.com/microsoft-reactor-sao-paulo/events/307865251) ![online]
 - 27: [GitTogether São Paulo](https://www.meetup.com/gittogether-brasil/events/307760086) - _São Paulo/SP_ ![presencial]
 <!-- JUNHO:END -->
 ### Julho
@@ -85,6 +91,7 @@ Pode ser que ainda não tenhamos adicionado ao nosso calendário de eventos! Se 
 - 18 e 19: [Codecon Summit 25](https://eventos.codecon.dev/codecon-summit-25/) - _Curitiba/PR_ ![presencial]
 - 19: [CajuSec](https://www.cajusec.com.br) - _Aracaju/SE_ ![presencial]
 - 20, 21, 22, 23 e 24: [XLV Congresso da Sociedade Brasileira de Computação - CSBC 2025](https://csbc.sbc.org.br/2025/) - _Maceió/AL_ ![presencial]
+- 23, 24 e 25: [Expotec 2025](https://www.expotec.org.br/2025/m-index.php) - _João Pessoa/PB_ ![presencial]
 - 26: [Tech Woman](https://www.instagram.com/techwoman.rec/) - _Recife/PE_ ![presencial]
 <!-- JULHO:END -->
 ### Agosto
@@ -112,7 +119,6 @@ Pode ser que ainda não tenhamos adicionado ao nosso calendário de eventos! Se 
 <!-- OUTUBRO:END -->
 ### Novembro
 <!-- NOVEMBRO:START -->
-- 15: [Front in Floripa 2025](https://frontin.floripa.br) - _Florianópolis/SC_ ![presencial]
 - 18, 19 e 20: [AI Summit 2025](https://www.sympla.com.br/evento-online/ai-summit-2025/2905033?utm_source=github&utm_medium=link&utm_campaign=aisummit_2025) ![online]
 - 22: [Big Data Brazil Experience 2025](https://www.sympla.com.br/evento/big-data-brazil-experience-2025/2571633) - _São Paulo/SP_ ![presencial]
 - 22: [DevOpsDays São Paulo](https://devopsdays.org/events/2025-sao-paulo/welcome/) - _São Paulo/SP_ ![presencial]
