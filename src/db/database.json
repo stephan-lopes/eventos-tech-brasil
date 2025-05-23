@@ -7670,6 +7670,13 @@
       "cidade": "Curitiba",
       "uf": "PR",
       "tipo": "presencial"
+    },
+    {
+      "nome": "Teste",
+      "url": "teste.com",
+      "cidade": "São Paulo",
+      "uf": "SP",
+      "tipo": "presencial"
     }
   ]
 }
