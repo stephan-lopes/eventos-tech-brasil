@@ -1,9 +1,11 @@
-name: Greetings
+name: "[Automação] Greetings"
 
 on:
   pull_request_target:
   issues:
     types: [opened]
+
+run-name: "[Automação] Greetings"
 
 jobs:
   greeting:
