@@ -1,7 +1,9 @@
-name: Modifica Titulo da Issue
+name: "[Automação] Modifica Titulo da Issue Criada"
 on:
   issues:
     types: [opened]
+
+run-name: "[Automação] Modifica Titulo da Issue - #${{ github.event.pull_request.number }}"
 
 jobs:
   change-issue-name:
