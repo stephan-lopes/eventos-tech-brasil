@@ -7610,6 +7610,22 @@
               "tipo": "híbrido"
             }
           ]
+        },
+        {
+          "mes": "dezembro",
+          "arquivado": false,
+          "eventos": [
+            {
+              "nome": "TDC 2025",
+              "data": [
+                "20"
+              ],
+              "url": "https://www.tdc.com.br",
+              "cidade": "São Paulo",
+              "uf": "SP",
+              "tipo": "presencial"
+            }
+          ]
         }
       ]
     }
