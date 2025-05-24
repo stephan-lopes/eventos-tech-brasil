@@ -1,4 +1,4 @@
-name: Criar PR para Cadastrar Agenda/Evento
+name: "[PR] Cadastrar Agenda/Evento"
 on:
   issues:
     types: [opened]
