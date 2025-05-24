@@ -7304,6 +7304,16 @@
               "tipo": "presencial"
             },
             {
+              "nome": "TDC 2025",
+              "data": [
+                "09"
+              ],
+              "url": "https://www.tdc.com.br",
+              "cidade": "São Paulo",
+              "uf": "SP",
+              "tipo": "presencial"
+            },
+            {
               "nome": "Codecon Summit",
               "data": [
                 "18",
