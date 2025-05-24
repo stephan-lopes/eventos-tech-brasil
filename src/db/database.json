@@ -7304,6 +7304,16 @@
               "tipo": "presencial"
             },
             {
+              "nome": "Teste",
+              "data": [
+                "08"
+              ],
+              "url": "testes.com",
+              "cidade": "São Paulo",
+              "uf": "SP",
+              "tipo": "presencial"
+            },
+            {
               "nome": "Codecon Summit",
               "data": [
                 "18",
