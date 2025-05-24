@@ -1,4 +1,4 @@
-name: [PR] Cancelar Evento/Agenda
+name: "[PR] Cancelar Evento/Agenda"
 on:
   issues:
     types: [opened]

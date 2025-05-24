@@ -1,4 +1,4 @@
-name: [Docs] Gerar Markdown
+name: "[Docs] Gerar Markdown"
 on:
   push:
     branches: ["main"]
