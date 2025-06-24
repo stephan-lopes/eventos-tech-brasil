@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const readmePath = path.join(__dirname, '../../README.md');
+const readmePath = path.join(__dirname, '../README.md');
 const fileContent = fs.readFileSync(readmePath, 'utf8');
 
 const patterns = [
