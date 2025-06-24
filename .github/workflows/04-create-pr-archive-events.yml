@@ -1,4 +1,4 @@
-name: Criar PR para Arquivar Agendas e Eventos
+name: "[PR] Arquivar Agendas/Eventos"
 on:
   issues:
     types: [opened]

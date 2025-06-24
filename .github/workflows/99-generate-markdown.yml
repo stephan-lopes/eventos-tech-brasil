@@ -1,4 +1,4 @@
-name: Gerar Markdown após Push
+name: "[Docs] Gerar Markdown"
 on:
   push:
     branches: ["main"]

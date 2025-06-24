@@ -7746,6 +7746,22 @@
               "tipo": "híbrido"
             }
           ]
+        },
+        {
+          "mes": "dezembro",
+          "arquivado": false,
+          "eventos": [
+            {
+              "nome": "TDC 2025",
+              "data": [
+                "20"
+              ],
+              "url": "https://www.tdc.com.br",
+              "cidade": "São Paulo",
+              "uf": "SP",
+              "tipo": "presencial"
+            }
+          ]
         }
       ]
     }
@@ -7805,6 +7821,13 @@
       "url": "https://www.meetup.com/women-techmakers-curitiba/events/305753276",
       "cidade": "Curitiba",
       "uf": "PR",
+      "tipo": "presencial"
+    },
+    {
+      "nome": "Teste",
+      "url": "teste.com",
+      "cidade": "São Paulo",
+      "uf": "SP",
       "tipo": "presencial"
     }
   ]
