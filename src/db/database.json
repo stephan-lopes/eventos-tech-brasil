@@ -7993,6 +7993,17 @@
               "tipo": "presencial"
             },
             {
+              "nome": "ETH Latam São Paulo 2025",
+              "data": [
+                "08",
+                "09"
+              ],
+              "url": "https://ethlatam.org/pt",
+              "cidade": "São Paulo",
+              "uf": "SP",
+              "tipo": "presencial"
+            },
+            {
               "nome": "AI Summit 2025",
               "data": [
                 "18",
