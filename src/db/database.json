@@ -7782,6 +7782,16 @@
               "tipo": "presencial"
             },
             {
+              "nome": "Google Cloud Summit Brasil 2025",
+              "data": [
+                "10"
+              ],
+              "url": "https://cloudonair.withgoogle.com/events/google-cloud-summit-brasil-2025",
+              "cidade": "São Paulo",
+              "uf": "SP",
+              "tipo": "presencial"
+            },
+            {
               "nome": "RogaDX",
               "data": [
                 "12"
