@@ -7889,6 +7889,16 @@
               "tipo": "presencial"
             },
             {
+              "nome": "Belém Global Elixir Meetup",
+              "data": [
+                "25"
+              ],
+              "url": "https://globalelixirmeetups.com/event/belem",
+              "cidade": "Belém",
+              "uf": "PA",
+              "tipo": "presencial"
+            },
+            {
               "nome": "Esquenta MVPConf - Curitiba",
               "data": [
                 "27"
