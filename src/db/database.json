@@ -8023,6 +8023,16 @@
           "arquivado": false,
           "eventos": [
             {
+              "nome": "BSides Brasília 2025",
+              "data": [
+                "01"
+              ],
+              "url": "https://bsidesbsb.com/",
+              "cidade": "Brasília",
+              "uf": "DF",
+              "tipo": "presencial"
+            },
+            {
               "nome": "The Developers Life Weekend 2025",
               "data": [
                 "07",
