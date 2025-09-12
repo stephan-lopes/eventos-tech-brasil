@@ -7832,6 +7832,18 @@
               "tipo": "presencial"
             },
             {
+              "nome": "Mind The Sec",
+              "data": [
+                "16",
+                "17",
+                "18"
+              ],
+              "url": "https://www.mindthesec.com.br/",
+              "cidade": "São Paulo",
+              "uf": "SP",
+              "tipo": "presencial"
+            },
+            {
               "nome": "Expoinovação",
               "data": [
                 "17",
