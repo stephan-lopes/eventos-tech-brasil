@@ -8112,6 +8112,23 @@
               "tipo": "híbrido"
             }
           ]
+        },
+        {
+          "mes": "dezembro",
+          "arquivado": false,
+          "eventos": [
+            {
+              "nome": "GTS e GTER",
+              "data": [
+                "15",
+                "16"
+              ],
+              "url": "https://gtergts.nic.br/",
+              "cidade": "São Paulo",
+              "uf": "SP",
+              "tipo": "presencial"
+            }
+          ]
         }
       ]
     }
