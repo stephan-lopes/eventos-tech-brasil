@@ -7928,6 +7928,16 @@
               "cidade": "Curitiba",
               "uf": "PR",
               "tipo": "presencial"
+            },
+            {
+              "nome": "AWS Community Day 2025",
+              "data": [
+                "27"
+              ],
+              "url": "https://www.awscommunityday.com.br/",
+              "cidade": "Campinas",
+              "uf": "SP",
+              "tipo": "presencial"
             }
           ]
         },
@@ -8126,6 +8136,17 @@
               "url": "https://bhack.com.br/",
               "cidade": "Belo Horizonte",
               "uf": "MG",
+              "tipo": "presencial"
+            },
+            {
+              "nome": "GTS e GTER",
+              "data": [
+                "15",
+                "16"
+              ],
+              "url": "https://gtergts.nic.br/",
+              "cidade": "São Paulo",
+              "uf": "SP",
               "tipo": "presencial"
             }
           ]
