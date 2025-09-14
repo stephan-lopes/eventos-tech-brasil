@@ -7996,6 +7996,19 @@
               "tipo": "presencial"
             },
             {
+              "nome": "Latinoware",
+              "data": [
+                "22",
+                "23",
+                "24",
+                "25"
+              ],
+              "url": "https://latinoware.org/",
+              "cidade": "Foz Do Iguaçu",
+              "uf": "PR",
+              "tipo": "presencial"
+            },
+            {
               "nome": "Brazil JS 2025",
               "data": [
                 "24"
