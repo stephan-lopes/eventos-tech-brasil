@@ -8081,6 +8081,19 @@
               "cidade": "São Paulo",
               "uf": "SP",
               "tipo": "presencial"
+            },
+            {
+              "nome": "Data Science Summit 2025",
+              "data": [
+                "28",
+                "29",
+                "30",
+                "31"
+              ],
+              "url": "https://dssbr.com.br/",
+              "cidade": "Curitiba",
+              "uf": "PR",
+              "tipo": "presencial"
             }
           ]
         },
