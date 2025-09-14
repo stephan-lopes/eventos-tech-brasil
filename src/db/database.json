@@ -7634,6 +7634,16 @@
               "tipo": "presencial"
             },
             {
+              "nome": "AWS Summit São Paulo",
+              "data": [
+                "13"
+              ],
+              "url": "https://aws.amazon.com/pt/events/summits/sao-paulo/",
+              "cidade": "São Paulo",
+              "uf": "SP",
+              "tipo": "presencial"
+            },
+            {
               "nome": "II Modelagem Computacional Sertão Mineiro",
               "data": [
                 "14",
@@ -7701,21 +7711,21 @@
               "tipo": "presencial"
             },
             {
-              "nome": "Microsoft Reactor - Escola Livre de IA: Machine Learning na era da IA",
-              "data": [
-                "27"
-              ],
-              "url": "https://www.meetup.com/pt-br/microsoft-reactor-sao-paulo/events/310354984",
-              "cidade": "",
-              "uf": "",
-              "tipo": "online"
-            },
-            {
               "nome": "FIAP Meetup #158 - Visão de Futuro: produtos inteligentes com IA",
               "data": [
                 "26"
               ],
               "url": "https://www.meetup.com/pt-br/fiapmeetups/events/310372037",
+              "cidade": "",
+              "uf": "",
+              "tipo": "online"
+            },
+            {
+              "nome": "Microsoft Reactor - Escola Livre de IA: Machine Learning na era da IA",
+              "data": [
+                "27"
+              ],
+              "url": "https://www.meetup.com/pt-br/microsoft-reactor-sao-paulo/events/310354984",
               "cidade": "",
               "uf": "",
               "tipo": "online"
