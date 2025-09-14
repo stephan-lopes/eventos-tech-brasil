@@ -7812,6 +7812,17 @@
               "tipo": "presencial"
             },
             {
+              "nome": "RogaDX",
+              "data": [
+                "12",
+                "13"
+              ],
+              "url": "https://rogadx.com/",
+              "cidade": "Maceió",
+              "uf": "AL",
+              "tipo": "presencial"
+            },
+            {
               "nome": "Hacking Na Web Day - Rio de Janeiro - 2025",
               "data": [
                 "13"
