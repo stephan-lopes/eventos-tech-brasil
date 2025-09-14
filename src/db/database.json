@@ -8324,6 +8324,13 @@
       "cidade": "Curitiba",
       "uf": "PR",
       "tipo": "presencial"
+    },
+    {
+      "nome": "HackBahia",
+      "url": "https://hackbahia.github.io/",
+      "cidade": "Salvador",
+      "uf": "BA",
+      "tipo": "presencial"
     }
   ]
 }
