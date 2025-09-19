@@ -7981,6 +7981,16 @@
               "cidade": "Campinas",
               "uf": "SP",
               "tipo": "presencial"
+            },
+            {
+              "nome": "SouJava Brasília meetup setembro 2025",
+              "data": [
+                "30"
+              ],
+              "url": "https://www.meetup.com/pt-br/soujavabrasilia/events/311113030",
+              "cidade": "Brasília",
+              "uf": "DF",
+              "tipo": "presencial"
             }
           ]
         },
