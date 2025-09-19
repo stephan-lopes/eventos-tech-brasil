@@ -8154,6 +8154,16 @@
               "tipo": "presencial"
             },
             {
+              "nome": "Elixir Curitiba 2025",
+              "data": [
+                "08"
+              ],
+              "url": "https://elixircuritiba.github.io/",
+              "cidade": "Curitiba",
+              "uf": "PR",
+              "tipo": "presencial"
+            },
+            {
               "nome": "NullByte Conference 2025",
               "data": [
                 "08"
