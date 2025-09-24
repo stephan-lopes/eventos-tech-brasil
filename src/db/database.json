@@ -8143,6 +8143,16 @@
               "tipo": "presencial"
             },
             {
+              "nome": "CodeCon Select Experience 2025",
+              "data": [
+                "01"
+              ],
+              "url": "https://codecon.dev/select",
+              "cidade": "São Paulo",
+              "uf": "SP",
+              "tipo": "presencial"
+            },
+            {
               "nome": "The Developers Life Weekend 2025",
               "data": [
                 "07",
