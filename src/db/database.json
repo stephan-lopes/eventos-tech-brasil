@@ -8217,6 +8217,18 @@
               "tipo": "online"
             },
             {
+              "nome": "Python Sul 2025 - Porto Alegre",
+              "data": [
+                "21",
+                "22",
+                "23"
+              ],
+              "url": "https://sul.python.org.br/",
+              "cidade": "Porto Alegre",
+              "uf": "RS",
+              "tipo": "presencial"
+            },
+            {
               "nome": "Big Data Brazil Experience 2025",
               "data": [
                 "22"
