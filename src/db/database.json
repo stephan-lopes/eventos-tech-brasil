@@ -7999,6 +7999,16 @@
           "arquivado": false,
           "eventos": [
             {
+              "nome": "Workshop: Criando Operadores Kubernetes em GoLang com Otávio Celestino",
+              "data": [
+                "01"
+              ],
+              "url": "https://gdg.community.dev/events/details/google-gdg-caxias-do-sul-presents-workshop-criando-operadores-kubernetes-em-golang-com-otavio-celestino/",
+              "cidade": "",
+              "uf": "",
+              "tipo": "online"
+            },
+            {
               "nome": "PHPeste 2025",
               "data": [
                 "03",
