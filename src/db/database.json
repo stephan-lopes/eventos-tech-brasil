@@ -8287,6 +8287,16 @@
           "arquivado": false,
           "eventos": [
             {
+              "nome": "DevFest Porto Alegre 2025",
+              "data": [
+                "06"
+              ],
+              "url": "https://gdg.community.dev/events/details/google-gdg-porto-alegre-presents-dev-fest-porto-alegre-2025-1/cohost-gdg-caxias-do-sul",
+              "cidade": "Porto Alegre",
+              "uf": "RS",
+              "tipo": "presencial"
+            },
+            {
               "nome": "BHack Conference 2025",
               "data": [
                 "06",
