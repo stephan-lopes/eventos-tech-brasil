@@ -8173,6 +8173,17 @@
               "tipo": "presencial"
             },
             {
+              "nome": "Dia do ACBr",
+              "data": [
+                "06",
+                "07"
+              ],
+              "url": "https://www.diadoacbr.com.br/",
+              "cidade": "São Paula",
+              "uf": "SP",
+              "tipo": "presencial"
+            },
+            {
               "nome": "The Developers Life Weekend 2025",
               "data": [
                 "07",
