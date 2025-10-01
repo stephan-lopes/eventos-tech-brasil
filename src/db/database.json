@@ -8123,6 +8123,16 @@
               "tipo": "presencial"
             },
             {
+              "nome": "Cloud Native Day - São Paulo 2025",
+              "data": [
+                "25"
+              ],
+              "url": "https://sessionize.com/cloud-native-day-sp-2025/",
+              "cidade": "São Paulo",
+              "uf": "SP",
+              "tipo": "presencial"
+            },
+            {
               "nome": "CS4CA LatAm Summit",
               "data": [
                 "28",
