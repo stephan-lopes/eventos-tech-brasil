@@ -8009,6 +8009,18 @@
               "tipo": "online"
             },
             {
+              "nome": "Bahia Tech Experience - BTX25",
+              "data": [
+                "02",
+                "03",
+                "04"
+              ],
+              "url": "https://www.bahiatechexperience.com.br",
+              "cidade": "Salvador",
+              "uf": "BA",
+              "tipo": "presencial"
+            },
+            {
               "nome": "PHPeste 2025",
               "data": [
                 "03",
