@@ -8328,6 +8328,16 @@
               "tipo": "presencial"
             },
             {
+              "nome": "DEVPIRA Festival 2025",
+              "data": [
+                "06"
+              ],
+              "url": "https://www.devpira.com.br/eventos/festival2025",
+              "cidade": "Piracicaba",
+              "uf": "SP",
+              "tipo": "presencial"
+            },
+            {
               "nome": "BHack Conference 2025",
               "data": [
                 "06",
