@@ -36,7 +36,7 @@ Pode ser que ainda não tenhamos adicionado ao nosso calendário de eventos! Se 
 - 01, 02, 03 e 04: [Simpósio Brasileiro de Cibersegurança - SBSeg 2025](https://sbseg2025.ppgia.pucpr.br/) - _Foz do Iguaçu/PR_ ![presencial]
 - 03, 04 e 05: [PGConf Brasil 2025](https://2025.pgconf.com.br/) - _João Pessoa/PB_ ![presencial]
 - 06: [Datacon](https://codecon.dev/datacon) - _São Paulo/SP_ ![presencial]
-- 08, 09, 10: [XXIV Simpósio Brasileiro sobre Fatores Humanos em Sistemas Computacionais](https://ihc.sbc.org.br/2025/) - _Belo Horizonte/MG_ ![presencial]
+- 08, 09 e 10: [XXIV Simpósio Brasileiro sobre Fatores Humanos em Sistemas Computacionais](https://ihc.sbc.org.br/2025/) - _Belo Horizonte/MG_ ![presencial]
 - 10: [Google Cloud Summit 2025](https://cloudonair.withgoogle.com/events/google-cloud-summit-brasil-2025) - _São Paulo/SP_ ![presencial]
 - 12 e 13: [Roga DX 2025](https://rogadx.com/) - _Maceió/AL_ ![presencial]
 - 13: [Hacking Na Web Day - Rio de Janeiro - 2025](https://www.instagram.com/hackingnawebday/p/dayipmguorj/) - _Rio De Janeiro/RJ_ ![presencial]
