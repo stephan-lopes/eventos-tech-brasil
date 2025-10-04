@@ -67,7 +67,7 @@ Pode ser que ainda não tenhamos adicionado ao nosso calendário de eventos! Se 
 - 26 e 27: [TDC Summit Brasília](https://thedevconf.com/tdc/2025/summit-brasilia/) - _Brasília/DF_ ![híbrido]
 - 27, 29 e 30: [GambiConf](https://gambiconf.dev/) - _São Paulo/SP_ ![híbrido]
 - 29: [DevFest Agreste 2025](https://doity.com.br/devfest25-build-a-new-era-of-innovation) - _Arapiraca/AL_ ![presencial]
-- [Meetup LinuxTips.Local](https://linuxtips.io/local-meetup/) - _São Paulo/SP_ ![híbrido]
+- 29: [Meetup LinuxTips.Local](https://linuxtips.io/local-meetup/) - _São Paulo/SP_ ![híbrido]
 <!-- NOVEMBRO:END -->
 <!-- ANO2025:END -->
 
