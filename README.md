@@ -63,6 +63,7 @@ Pode ser que ainda não tenhamos adicionado ao nosso calendário de eventos! Se 
 - 15: [Front in Floripa 2025](https://frontin.floripa.br) - _Florianópolis/SC_ ![presencial]
 - 18, 19 e 20: [AI Summit 2025](https://www.sympla.com.br/evento-online/ai-summit-2025/2905033?utm_source=github&utm_medium=link&utm_campaign=aisummit_2025) ![online]
 - 19: [NodeBR [Curitiba] #001 - Primeira Edição de Curitiba](https://guild.host/events/nodebr-curitiba-001-d64cku) - _Curitiba/PR_ ![presencial]
+- 21, 22 e 23: [Python Sul 2025](https://sul.python.org.br/) - _Porto Alegre/RS_ ![presencial]
 - 22: [Big Data Brazil Experience 2025](https://www.sympla.com.br/evento/big-data-brazil-experience-2025/2571633) - _São Paulo/SP_ ![presencial]
 - 22: [DevOpsDays São Paulo](https://devopsdays.org/events/2025-sao-paulo/welcome/) - _São Paulo/SP_ ![presencial]
 - 26 e 27: [TDC Summit Brasília](https://thedevconf.com/tdc/2025/summit-brasilia/) - _Brasília/DF_ ![híbrido]
