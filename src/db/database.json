@@ -8157,6 +8157,17 @@
               "tipo": "presencial"
             },
             {
+              "nome": "MVP Conf",
+              "data": [
+                "24",
+                "25"
+              ],
+              "url": "https://mvpconf.com.br/",
+              "cidade": "São Paulo",
+              "uf": "SP",
+              "tipo": "presencial"
+            },
+            {
               "nome": "Hacking Na Web Day - São Paulo - 2025",
               "data": [
                 "25"
