@@ -8062,6 +8062,19 @@
               "tipo": "presencial"
             },
             {
+              "nome": "REC'n Play 2025",
+              "data": [
+                "15",
+                "16",
+                "17",
+                "18"
+              ],
+              "url": "https://app.jalanlive.com/recnplay2025/home",
+              "cidade": "Recife",
+              "uf": "PE",
+              "tipo": "presencial"
+            },
+            {
               "nome": "Aracomp 2025",
               "data": [
                 "16",
