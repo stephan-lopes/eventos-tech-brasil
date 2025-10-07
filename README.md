@@ -51,6 +51,7 @@ Pode ser que ainda não tenhamos adicionado ao nosso calendário de eventos! Se 
 <!-- OUTUBRO:START -->
 - 08: [Devfest Pelotas 2025](https://gdg.community.dev/events/details/google-gdg-pelotas-presents-devfest-pelotas-2025/) - _Pelotas/RS_ ![presencial]
 - 16 e 17: [DevOps Summit 2025](https://blueprintt.co/eventos) - _São Paulo/SP_ ![presencial]
+- 16, 17 e 18: [Programaria Summit 2025](https://www.programaria.org/programaria-summit-2025/) - _São Paulo/SP_ ![híbrido]
 - 21, 22, 23, 24, 25, 26 e 27: [Python Brasil 2025](https://2025.pythonbrasil.org.br/) - _São Paulo/SP_ ![presencial]
 - 23: [NodeBR [São Paulo] #75 - Node.js Beyond the Basics](https://guild.host/events/nodebr-so-paulo-75-nodejs-bg41te) - _São Paulo/SP_ ![presencial]
 - 24 e 25: [MVP Conf](https://mvpconf.com.br/) - _São Paulo/SP_ ![presencial]
