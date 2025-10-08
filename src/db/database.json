@@ -8086,6 +8086,16 @@
               "tipo": "presencial"
             },
             {
+              "nome": "DevOpsDays Campinas 2025",
+              "data": [
+                "18"
+              ],
+              "url": "https://devopsdays.org/events/2025-campinas/welcome/",
+              "cidade": "Campinas",
+              "uf": "SP",
+              "tipo": "presencial"
+            },
+            {
               "nome": "Red Hat Summit: Connect 2025 São Paulo",
               "data": [
                 "21"
