@@ -74,6 +74,10 @@ Pode ser que ainda não tenhamos adicionado ao nosso calendário de eventos! Se 
 - 29: [DevFest Agreste 2025](https://doity.com.br/devfest25-build-a-new-era-of-innovation) - _Arapiraca/AL_ ![presencial]
 - 29: [Meetup LinuxTips.Local](https://linuxtips.io/local-meetup/) - _São Paulo/SP_ ![híbrido]
 <!-- NOVEMBRO:END -->
+### Dezembro
+<!-- DEZEMBRO:START -->
+- 10 e 11: [TDC Experience Porto Alegre](https://promo.thedevconf.com/tdc-experience-porto-alegre-2025) - _Porto Alegre/RS_ ![presencial]
+<!-- DEZEMBRO:END -->
 <!-- ANO2025:END -->
 
 ## TBA: To Be Announced
