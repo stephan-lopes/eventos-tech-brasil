@@ -8344,6 +8344,17 @@
               "tipo": "presencial"
             },
             {
+              "nome": "OpenForum Academy (OFA) Symposium",
+              "data": [
+                "18",
+                "19"
+              ],
+              "url": "https://symposium.openforumeurope.org/",
+              "cidade": "Rio De Janeiro",
+              "uf": "RJ",
+              "tipo": "presencial"
+            },
+            {
               "nome": "AI Summit 2025",
               "data": [
                 "18",
