@@ -8243,6 +8243,16 @@
               "cidade": "Curitiba",
               "uf": "PR",
               "tipo": "presencial"
+            },
+            {
+              "nome": "Tecnopuc Experience 2025",
+              "data": [
+                "30"
+              ],
+              "url": "https://tecnopuc.pucrs.br/eventos/tecnopuc-experience/",
+              "cidade": "Porto Alegre",
+              "uf": "RS",
+              "tipo": "presencial"
             }
           ]
         },
