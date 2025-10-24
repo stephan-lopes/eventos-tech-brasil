@@ -8250,6 +8250,18 @@
               "tipo": "presencial"
             },
             {
+              "nome": "BB Digital Week",
+              "data": [
+                "28",
+                "29",
+                "30"
+              ],
+              "url": "https://bbdw.com.br",
+              "cidade": "Brasília",
+              "uf": "DF",
+              "tipo": "presencial"
+            },
+            {
               "nome": "Data Science Summit 2025",
               "data": [
                 "28",
