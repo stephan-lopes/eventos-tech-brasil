@@ -8062,9 +8062,55 @@
               "tipo": "presencial"
             },
             {
+              "nome": "Campus Party Weekend Piauí",
+              "data": [
+                "10",
+                "11",
+                "12"
+              ],
+              "url": "https://brasil.campus-party.org/cpweekend/piaui2/",
+              "cidade": "Teresina",
+              "uf": "PI",
+              "tipo": "presencial"
+            },
+            {
+              "nome": "REC'n Play 2025",
+              "data": [
+                "15",
+                "16",
+                "17",
+                "18"
+              ],
+              "url": "https://app.jalanlive.com/recnplay2025/home",
+              "cidade": "Recife",
+              "uf": "PE",
+              "tipo": "presencial"
+            },
+            {
+              "nome": "Aracomp 2025",
+              "data": [
+                "16",
+                "17"
+              ],
+              "url": "https://evento.ufal.br/aracomp2025/",
+              "cidade": "Arapiraca",
+              "uf": "AL",
+              "tipo": "presencial"
+            },
+            {
+              "nome": "DevOpsDays Campinas 2025",
+              "data": [
+                "18"
+              ],
+              "url": "https://devopsdays.org/events/2025-campinas/welcome/",
+              "cidade": "Campinas",
+              "uf": "SP",
+              "tipo": "presencial"
+            },
+            {
               "nome": "Hacktoberfest - UESPI Parnaíba",
               "data": [
-                "2025-10-18"
+                "18"
               ],
               "url": "https://www.sympla.com.br/evento/hacktoberfest-phb-edition/3150069",
               "cidade": "Parnaíba",
@@ -8156,6 +8202,17 @@
               "tipo": "presencial"
             },
             {
+              "nome": "MVP Conf",
+              "data": [
+                "24",
+                "25"
+              ],
+              "url": "https://mvpconf.com.br/",
+              "cidade": "São Paulo",
+              "uf": "SP",
+              "tipo": "presencial"
+            },
+            {
               "nome": "Hacking Na Web Day - São Paulo - 2025",
               "data": [
                 "25"
@@ -8176,6 +8233,32 @@
               "tipo": "presencial"
             },
             {
+              "nome": "Mercado Livre Hacking Event 2025",
+              "data": [
+                "25",
+                "26",
+                "27",
+                "28",
+                "29",
+                "30",
+                "31"
+              ],
+              "url": "https://forms.gle/cs35peycogsm8env9",
+              "cidade": "",
+              "uf": "",
+              "tipo": "online"
+            },
+            {
+              "nome": "FIAP Meetup - Do local ao Global ESG: Amazônia e tecnologia",
+              "data": [
+                "28"
+              ],
+              "url": "https://www.meetup.com/pt-br/fiapmeetups/events/311344773/?eventorigin=group_upcoming_events",
+              "cidade": "São Paulo",
+              "uf": "SP",
+              "tipo": "presencial"
+            },
+            {
               "nome": "CS4CA LatAm Summit",
               "data": [
                 "28",
@@ -8184,6 +8267,18 @@
               "url": "https://latam.cs4ca.com/",
               "cidade": "São Paulo",
               "uf": "SP",
+              "tipo": "presencial"
+            },
+            {
+              "nome": "BB Digital Week",
+              "data": [
+                "28",
+                "29",
+                "30"
+              ],
+              "url": "https://bbdw.com.br",
+              "cidade": "Brasília",
+              "uf": "DF",
               "tipo": "presencial"
             },
             {
@@ -8197,6 +8292,16 @@
               "url": "https://dssbr.com.br/",
               "cidade": "Curitiba",
               "uf": "PR",
+              "tipo": "presencial"
+            },
+            {
+              "nome": "Tecnopuc Experience 2025",
+              "data": [
+                "30"
+              ],
+              "url": "https://tecnopuc.pucrs.br/eventos/tecnopuc-experience/",
+              "cidade": "Porto Alegre",
+              "uf": "RS",
               "tipo": "presencial"
             }
           ]
@@ -8226,13 +8331,25 @@
               "tipo": "presencial"
             },
             {
+              "nome": "Qiskit Fall Fest 2025 - UFABC & IBM Quantum",
+              "data": [
+                "05",
+                "06",
+                "10"
+              ],
+              "url": "https://qiskitbrasil.com.br/",
+              "cidade": "",
+              "uf": "",
+              "tipo": "online"
+            },
+            {
               "nome": "Dia do ACBr",
               "data": [
                 "06",
                 "07"
               ],
               "url": "https://www.diadoacbr.com.br/",
-              "cidade": "São Paula",
+              "cidade": "São Paulo",
               "uf": "SP",
               "tipo": "presencial"
             },
@@ -8278,6 +8395,16 @@
               "tipo": "presencial"
             },
             {
+              "nome": "DevFest Rio de Janeiro 2025",
+              "data": [
+                "08"
+              ],
+              "url": "https://gdg.community.dev/events/details/google-gdg-rio-de-janeiro-presents-devfest-rio-de-janeiro-2025/",
+              "cidade": "Rio De Janeiro",
+              "uf": "RJ",
+              "tipo": "presencial"
+            },
+            {
               "nome": "ETH Latam São Paulo 2025",
               "data": [
                 "08",
@@ -8286,6 +8413,17 @@
               "url": "https://ethlatam.org/pt",
               "cidade": "São Paulo",
               "uf": "SP",
+              "tipo": "presencial"
+            },
+            {
+              "nome": "OpenForum Academy (OFA) Symposium",
+              "data": [
+                "18",
+                "19"
+              ],
+              "url": "https://symposium.openforumeurope.org/",
+              "cidade": "Rio De Janeiro",
+              "uf": "RJ",
               "tipo": "presencial"
             },
             {
@@ -8301,7 +8439,33 @@
               "tipo": "online"
             },
             {
+              "nome": "CPGoiás5 - Campus Party Goiás 2025",
+              "data": [
+                "19",
+                "20",
+                "21",
+                "22",
+                "23"
+              ],
+              "url": "https://brasil.campus-party.org/",
+              "cidade": "Goiânia",
+              "uf": "GO",
+              "tipo": "presencial"
+            },
+            {
               "nome": "Python Sul 2025 - Porto Alegre",
+              "data": [
+                "21",
+                "22",
+                "23"
+              ],
+              "url": "https://sul.python.org.br/",
+              "cidade": "Porto Alegre",
+              "uf": "RS",
+              "tipo": "presencial"
+            },
+            {
+              "nome": "Python Sul 2025",
               "data": [
                 "21",
                 "22",
@@ -8386,6 +8550,26 @@
                 "06"
               ],
               "url": "https://www.devpira.com.br/eventos/festival2025",
+              "cidade": "Piracicaba",
+              "uf": "SP",
+              "tipo": "presencial"
+            },
+            {
+              "nome": "DevopsDays Floripa 2025",
+              "data": [
+                "06"
+              ],
+              "url": "https://meuingresso.com.br/eventos/devopsdays-floripa-2025",
+              "cidade": "Florianópolis",
+              "uf": "SC",
+              "tipo": "presencial"
+            },
+            {
+              "nome": "DEVPIRA FESTIVAL 2025",
+              "data": [
+                "06"
+              ],
+              "url": "https://www.devpira.com.br/eventos",
               "cidade": "Piracicaba",
               "uf": "SP",
               "tipo": "presencial"
