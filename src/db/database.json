@@ -8427,6 +8427,16 @@
               "tipo": "presencial"
             },
             {
+              "nome": "DevFest Paraná",
+              "data": [
+                "16"
+              ],
+              "url": "https://devfestpr.com.br/",
+              "cidade": "Ponta Grossa",
+              "uf": "PR",
+              "tipo": "presencial"
+            },
+            {
               "nome": "OpenForum Academy (OFA) Symposium",
               "data": [
                 "18",
