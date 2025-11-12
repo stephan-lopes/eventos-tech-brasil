@@ -8416,6 +8416,17 @@
               "tipo": "presencial"
             },
             {
+              "nome": "Santos Digital Week",
+              "data": [
+                "13",
+                "14"
+              ],
+              "url": "https://www.santosdigitalweek.com.br/",
+              "cidade": "Santos",
+              "uf": "SP",
+              "tipo": "presencial"
+            },
+            {
               "nome": "8.8 Matrix Brasil",
               "data": [
                 "14",
