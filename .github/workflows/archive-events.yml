@@ -18,6 +18,8 @@ jobs:
     steps:
       - name: Clone do Repositório
         uses: actions/checkout@v4
+        with:
+          ref: develop
 
       - name: Obter detalhes do mês e ano da issue
         id: issue_details
@@ -32,14 +34,7 @@ jobs:
             echo "$event_info" | awk '/^###/ { key=$0; next }NF { print key ": " $0 }' | grep "$key_name" | sed 's/^[^:]*: //'
           }
 
-          extract_abbreviation() {
-              local input="$1"
-              echo "$input" | sed -E 's/.*\(([^)]+)\).*/\1/'
-          }
-
-          capitalize_first_letter() {
-            echo "$1" | awk '{ for(i=1;i<=NF;i++) $i=toupper(substr($i,1,1)) substr($i,2); }1'
-          }
+          event_name=$(get_event_values "$event_info" 'Nome do(a) Evento/Agenda')
 
           archive_month=$(get_event_values "$event_info" 'Mês para ser Arquivado')
           archive_year=$(get_event_values "$event_info" 'Ano do Mês a ser Arquivado ou Ano a ser arquivado')
@@ -50,7 +45,8 @@ jobs:
 
           echo "archive_month=${archive_month}" >> $GITHUB_ENV
           echo "archive_year=${archive_year}" >> $GITHUB_ENV
-      
+          echo "event_name=${event_name}" >> $GITHUB_ENV
+
       - name: Arquivar o Mês/Ano
         run: |
           pip3 install -r src/requirements.txt
@@ -61,24 +57,40 @@ jobs:
           git config --global user.name "${{ github.event.issue.user.login }}"
           git config --global user.email "${{ github.event.issue.user.login }}@users.noreply.github.com"
 
-      - name: Criar uma nova branch
+      - name: Commitar alterações na develop
         run: |
-          branch_name="feature/add-event-issue-${{ github.event.issue.number }}"
-          git checkout -b $branch_name
           git add src/db/database.json
-          git commit -m "Adicionando novo evento: ${{ env.event_name }}"
-          git push origin $branch_name
 
-          echo "branch_name=${branch_name}" >> $GITHUB_ENV
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "Nenhuma alteração para comitar. Encerrando."
+            exit 0
+          fi
+
+          git commit -m "Arquivando evento: ${{ env.event_name }}" -m "Closes #${{ github.event.issue.number }}"
+          git push origin develop
 
       - name: Criar Pull Request
         run: |
+          # Verifica se já existe PR aberto de develop para main
+          EXISTING_PR=$(gh pr list \
+            --base main \
+            --head develop \
+            --state open \
+            --json number \
+            --jq '.[0].number // empty')
+
+          if [ -n "$EXISTING_PR" ]; then
+            echo "Já existe PR aberto de develop para main (#$EXISTING_PR). Não vou criar outro."
+            exit 0
+          fi
+
+          echo "Nenhum PR aberto de develop para main. Criando novo PR..."
+
           gh pr create \
-          -B main \
-          -H ${{ env.branch_name }} \
-          --title "Arquivar: ${{ env.archive_month != '' && format('{0}/{1}', env.archive_month, env.archive_year) || env.archive_year }}" \
-          --body "Closes #${{ github.event.issue.number }}" \
-          --label arquivar \
-          --reviewer "${{ env.reviewers }}"
+            --base main \
+            --head develop \
+            --title "Novos Eventos Prontos para Aprovação!" \
+            --reviewer "${{ env.reviewers }}"
+
         env:
           GH_TOKEN: ${{ github.token }}
