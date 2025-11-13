@@ -7425,7 +7425,7 @@
         },
         {
           "mes": "julho",
-          "arquivado": false,
+          "arquivado": true,
           "eventos": [
             {
               "nome": "AWS UG MOC - Aumentando a Produtividade em Iac com IA",
