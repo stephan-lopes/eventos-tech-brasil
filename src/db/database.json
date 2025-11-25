@@ -8663,6 +8663,16 @@
               "tipo": "presencial"
             },
             {
+              "nome": "Meetup - PythOnRio",
+              "data": [
+                "10"
+              ],
+              "url": "https://pythonrio.netlify.app/inscreva-se",
+              "cidade": "Rio De Janeiro",
+              "uf": "RJ",
+              "tipo": "presencial"
+            },
+            {
               "nome": "DevOpsDays Recife 2025",
               "data": [
                 "13"
