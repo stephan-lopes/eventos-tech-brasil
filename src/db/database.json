@@ -8682,6 +8682,16 @@
               "cidade": "São Paulo",
               "uf": "SP",
               "tipo": "presencial"
+            },
+            {
+              "nome": "DEVFEST Pernambuco",
+              "data": [
+                "26"
+              ],
+              "url": "https://www.devfestpe.com.br/",
+              "cidade": "Recife",
+              "uf": "PE",
+              "tipo": "presencial"
             }
           ]
         }
