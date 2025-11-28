@@ -8550,6 +8550,16 @@
               "tipo": "híbrido"
             },
             {
+              "nome": "PHP Rio",
+              "data": [
+                "27"
+              ],
+              "url": "https://www.sympla.com.br/evento/meetup-de-comunidade-php-em-alta-performance-com-codigo-limpo-seguro-e-centrado-no-usuario/3196792",
+              "cidade": "Rio De Janeiro",
+              "uf": "RJ",
+              "tipo": "presencial"
+            },
+            {
               "nome": "SWP Summit #11",
               "data": [
                 "28"
