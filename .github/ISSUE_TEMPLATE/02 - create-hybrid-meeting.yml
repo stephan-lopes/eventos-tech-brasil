@@ -18,7 +18,7 @@ body:
     attributes:
       label: Nome do(a) Evento/Agenda
       description: Qual o nome do(a) evento/agenda?
-      placeholder: "ex: TDC 2025"
+      placeholder: "ex: TDC 2026"
     validations:
       required: true
 
@@ -96,7 +96,7 @@ body:
       multiple: false
       default: 0
       options:
-        - "2025"
+        - "2026"
     validations:
       required: true
 
