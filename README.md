@@ -26,7 +26,7 @@ Pode ser que ainda não tenhamos adicionado ao nosso calendário de eventos! Se 
 <!-- JUNHO:START -->
 - 03: [GitHub Actions: Automatizando IaC com Terraform](https://www.meetup.com/microsoft-reactor-sao-paulo/events/307305412) ![online]
 - 05: [Summit de IA](https://www.summitdeinteligenciaartificial.com/informa-es-do-evento-e-registro/summit-de-ia-2025) - _Joinvile/SC_ ![presencial]
-- 06: [Pyladies e Grupy-SP no Microsoft Reactor](https://www.meetup.com/microsoft-reactor-sao-paulo/events/307942759) - _São Paulo/SP_ ![]
+- 06: [Pyladies e Grupy-SP no Microsoft Reactor](https://www.meetup.com/microsoft-reactor-sao-paulo/events/307942759) ![online]
 - 06: [Pylestras de Junho das Pyladies + Grupy @ Microsoft Reactor](https://developer.microsoft.com/en-us/reactor/events/25949/) - _São Paulo/SP_ ![presencial]
 - 07: [Hacking Na Web Day - Belo Horizonte - 2025](https://www.instagram.com/hackingnawebday/p/dayipmguorj/) - _Belo Horizonte/MG_ ![presencial]
 - 07: [Azure Synapse Analytics, Fabric e Data Factory Day - ETL e BIG Data](https://www.meetup.com/azureacademy/events/306775025) ![online]
