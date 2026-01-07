@@ -85,7 +85,6 @@ jobs:
           -H develop \
           --title "Arquivar: ${{ env.archive_month != '' && format('{0}/{1}', env.archive_month, env.archive_year) || env.archive_year }}" \
           --body "Esse é um PR que é aberto automaticamente" \
-          --label arquivar \
-          --reviewer "${{ env.reviewers }}"
+          --label arquivar
         env:
           GH_TOKEN: ${{ github.token }}
