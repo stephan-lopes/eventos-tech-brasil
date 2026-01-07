@@ -18,6 +18,9 @@ jobs:
     steps:
       - name: Clone do Repositório
         uses: actions/checkout@v4
+        with:
+          ref: develop
+          fetch-depth: 0
 
       - name: Obter detalhes do mês e ano da issue
         id: issue_details
@@ -50,7 +53,7 @@ jobs:
 
           echo "archive_month=${archive_month}" >> $GITHUB_ENV
           echo "archive_year=${archive_year}" >> $GITHUB_ENV
-      
+
       - name: Arquivar o Mês/Ano
         run: |
           pip3 install -r src/requirements.txt
@@ -63,21 +66,25 @@ jobs:
 
       - name: Criar uma nova branch
         run: |
-          branch_name="feature/add-event-issue-${{ github.event.issue.number }}"
-          git checkout -b $branch_name
+          git checkout develop
           git add src/db/database.json
-          git commit -m "Adicionando novo evento: ${{ env.event_name }}"
-          git push origin $branch_name
 
-          echo "branch_name=${branch_name}" >> $GITHUB_ENV
+          if [ -n "${archive_month}" ]; then
+            COMMIT_MSG="Arquivar: ${archive_month}/${archive_year}"
+          else
+            COMMIT_MSG="Arquivar: ${archive_year}"
+          fi
+
+          git commit -m "$COMMIT_MSG" -m "Closes #${{ github.event.issue.number}}" || echo "Nada para commitar"
+          git push origin develop
 
       - name: Criar Pull Request
         run: |
           gh pr create \
           -B main \
-          -H ${{ env.branch_name }} \
+          -H develop \
           --title "Arquivar: ${{ env.archive_month != '' && format('{0}/{1}', env.archive_month, env.archive_year) || env.archive_year }}" \
-          --body "Closes #${{ github.event.issue.number }}" \
+          --body "Esse é um PR que é aberto automaticamente" \
           --label arquivar \
           --reviewer "${{ env.reviewers }}"
         env:
