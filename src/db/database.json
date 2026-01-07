@@ -8733,7 +8733,7 @@
       "meses": [
         {
           "mes": "janeiro",
-          "arquivado": false,
+          "arquivado": true,
           "eventos": [
             {
               "nome": "Conecta Tech (Comunidade Nortejs) - Introdução a Next. js",
