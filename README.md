@@ -1,5 +1,5 @@
 <p class="header" align="center">
- <img width="150px" src="https://raw.githubusercontent.com/Abacatinhos/agenda-tech-brasil/main/assets/abacatinhos.svg" align="center" alt="GitHub Readme Stats" />
+ <img width="150px" src="https://raw.githubusercontent.com/agenda-tech-brasil/agenda-tech-brasil/main/assets/abacatinhos.svg" align="center" alt="GitHub Readme Stats" />
  <h1 align="center">Agenda Tech Brasil</h1> 
 </p>
 
@@ -18,7 +18,7 @@ _Sabe aquele evento de tecnologia que você procura, mas não sabe onde encontra
 
 **Não encontrou o evento, palestra ou iniciativa que estava procurando?**
 
-Pode ser que ainda não tenhamos adicionado ao nosso calendário de eventos! Se você conhece algum evento que acredita ser relevante para estar aqui, convidamos você a adicioná-lo. Está interessado(a) em nos ajudar nisso? [Clique aqui para aprender como incluir novos eventos e ajudar o repositório a crescer!](https://github.com/Abacatinhos/agenda-tech-brasil/blob/master/CONTRIBUTING.md)
+Pode ser que ainda não tenhamos adicionado ao nosso calendário de eventos! Se você conhece algum evento que acredita ser relevante para estar aqui, convidamos você a adicioná-lo. Está interessado(a) em nos ajudar nisso? [Clique aqui para aprender como incluir novos eventos e ajudar o repositório a crescer!](https://github.com/agenda-tech-brasil/agenda-tech-brasil/blob/master/CONTRIBUTING.md)
 
 ## Eventos em 2025
 <!-- ANO2025:START -->
@@ -192,9 +192,9 @@ Pode ser que ainda não tenhamos adicionado ao nosso calendário de eventos! Se 
 
 ## Eventos dos anos anteriores
 
-- [Eventos 2022](https://github.com/Abacatinhos/eventos-tech-brasil/blob/main/arquivo/2022.md)
-- [Eventos 2023](https://github.com/Abacatinhos/eventos-tech-brasil/blob/main/arquivo/2023.md)
-- [Eventos 2024](https://github.com/Abacatinhos/eventos-tech-brasil/blob/main/arquivo/2024.md)
+- [Eventos 2022](https://github.com/agenda-tech-brasil/agenda-tech-brasil/blob/main/arquivo/2022.md)
+- [Eventos 2023](https://github.com/agenda-tech-brasil/agenda-tech-brasil/blob/main/arquivo/2023.md)
+- [Eventos 2024](https://github.com/agenda-tech-brasil/agenda-tech-brasil/blob/main/arquivo/2024.md)
 
 <!--LINK DAS BADGES:START-->
 
