@@ -8811,6 +8811,16 @@
               "cidade": "Porto Alegre",
               "uf": "RS",
               "tipo": "presencial"
+            },
+            {
+              "nome": "SQL Saturday Belo Horizonte 2026",
+              "data": [
+                "28"
+              ],
+              "url": "https://sqlsaturday.com/2026-02-28-sqlsaturday1132/",
+              "cidade": "Belo Horizonte",
+              "uf": "MG",
+              "tipo": "presencial"
             }
           ]
         },
