@@ -1,4 +1,4 @@
-name: Criar PR para Arquivar Agendas e Eventos
+name: "[CI] Arquivar Agenda(s)/Evento(s)"
 on:
   issues:
     types: [opened]
@@ -50,7 +50,7 @@ jobs:
 
           echo "archive_month=${archive_month}" >> $GITHUB_ENV
           echo "archive_year=${archive_year}" >> $GITHUB_ENV
-      
+
       - name: Arquivar o Mês/Ano
         run: |
           pip3 install -r src/requirements.txt
