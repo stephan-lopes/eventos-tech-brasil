@@ -1,4 +1,4 @@
-name: Criar PR para Cancelar Evento/Agenda
+name: "[CI] Cancelar Evento/Agenda"
 on:
   issues:
     types: [opened]

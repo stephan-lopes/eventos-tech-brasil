@@ -1,4 +1,4 @@
-name: Gerar Markdown após Push
+name: "[AUTO] Gerar Markdown"
 on:
   #  push:
   #  branches: ["main"]
@@ -6,12 +6,12 @@ on:
     workflows: ["Criar PR para Cadastrar Agenda/Evento"]
     types:
       - completed
+
 permissions:
   contents: write
 
 jobs:
   generate-markdown:
-    #if: github.ref == 'refs/heads/main'
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     steps:
