@@ -8837,6 +8837,16 @@
               "cidade": "Recife",
               "uf": "PE",
               "tipo": "presencial"
+            },
+            {
+              "nome": "SQL Saturday Brasil",
+              "data": [
+                "28"
+              ],
+              "url": "https://sqlsaturday.com.br/",
+              "cidade": "Guarulhos",
+              "uf": "SP",
+              "tipo": "presencial"
             }
           ]
         }
