@@ -8868,6 +8868,22 @@
               "tipo": "presencial"
             }
           ]
+        },
+        {
+          "mes": "agosto",
+          "arquivado": false,
+          "eventos": [
+            {
+              "nome": "Codecon Summit 2026",
+              "data": [
+                "14"
+              ],
+              "url": "https://eventos.codecon.dev/eventos/codecon-summit-26",
+              "cidade": "Pinhais",
+              "uf": "PR",
+              "tipo": "presencial"
+            }
+          ]
         }
       ]
     }
