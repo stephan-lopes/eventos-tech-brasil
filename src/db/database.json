@@ -8851,6 +8851,22 @@
           ]
         },
         {
+          "mes": "maio",
+          "arquivado": false,
+          "eventos": [
+            {
+              "nome": "Python Sul 2026",
+              "data": [
+                "01"
+              ],
+              "url": "https://sul.python.org.br/",
+              "cidade": "Londrina",
+              "uf": "PR",
+              "tipo": "presencial"
+            }
+          ]
+        },
+        {
           "mes": "junho",
           "arquivado": false,
           "eventos": [
