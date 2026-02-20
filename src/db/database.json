@@ -8902,6 +8902,22 @@
               "tipo": "presencial"
             }
           ]
+        },
+        {
+          "mes": "outubro",
+          "arquivado": false,
+          "eventos": [
+            {
+              "nome": "Python Brasil 2026",
+              "data": [
+                "14"
+              ],
+              "url": "https://2026.pythonbrasil.org.br/",
+              "cidade": "Florianópolis",
+              "uf": "SC",
+              "tipo": "presencial"
+            }
+          ]
         }
       ]
     }
