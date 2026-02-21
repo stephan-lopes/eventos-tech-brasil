@@ -8802,6 +8802,17 @@
           "arquivado": false,
           "eventos": [
             {
+              "nome": "Hacking Club - Workshop Prático: Introdução ao Pentest em Ambientes Linux e Windows",
+              "data": [
+                "23",
+                "24"
+              ],
+              "url": "https://lp.hackingclub.com/",
+              "cidade": "",
+              "uf": "",
+              "tipo": "online"
+            },
+            {
               "nome": "Digital Investigation Conference Brazil 2026",
               "data": [
                 "26",
