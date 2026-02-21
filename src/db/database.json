@@ -4990,7 +4990,7 @@
     },
     {
       "ano": 2025,
-      "arquivado": false,
+      "arquivado": true,
       "meses": [
         {
           "mes": "janeiro",
@@ -7125,7 +7125,7 @@
         },
         {
           "mes": "junho",
-          "arquivado": false,
+          "arquivado": true,
           "eventos": [
             {
               "nome": "GitHub Actions: Automatizando IaC com Terraform",
@@ -7425,7 +7425,7 @@
         },
         {
           "mes": "julho",
-          "arquivado": false,
+          "arquivado": true,
           "eventos": [
             {
               "nome": "AWS UG MOC - Aumentando a Produtividade em Iac com IA",
@@ -7549,7 +7549,7 @@
         },
         {
           "mes": "agosto",
-          "arquivado": false,
+          "arquivado": true,
           "eventos": [
             {
               "nome": "Leading Tech Sessions: Como Criar e Gerir uma Estratégia de Produto na Prática",
@@ -7754,7 +7754,7 @@
         },
         {
           "mes": "setembro",
-          "arquivado": false,
+          "arquivado": true,
           "eventos": [
             {
               "nome": "Simpósio Brasileiro de Cibersegurança - SBSeg 2025",
@@ -7996,7 +7996,7 @@
         },
         {
           "mes": "outubro",
-          "arquivado": false,
+          "arquivado": true,
           "eventos": [
             {
               "nome": "Workshop: Criando Operadores Kubernetes em GoLang com Otávio Celestino",
@@ -8308,7 +8308,7 @@
         },
         {
           "mes": "novembro",
-          "arquivado": false,
+          "arquivado": true,
           "eventos": [
             {
               "nome": "BSides Brasília 2025",
@@ -8594,7 +8594,7 @@
         },
         {
           "mes": "dezembro",
-          "arquivado": false,
+          "arquivado": true,
           "eventos": [
             {
               "nome": "PHP Conference Brasil 2025",
