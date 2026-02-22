@@ -39,7 +39,7 @@ Pode ser que ainda não tenhamos adicionado ao nosso calendário de eventos! Se 
 <!-- FEVEREIRO:END -->
 ### Março
 <!-- MARÇO:START -->
-- 14: [AWSome Women Community Summit Brasil 2026](https://www.sympla.com.br/evento/awsome-women-community-summit-brasil-2026/3158951?referrer=www.google.com&referrer=www.google.com) - _Recife/PE_ ![presencial]
+- 14: [AWSome Women Community Summit Brasil 2026](https://www.sympla.com.br/evento/awsome-women-community-summit-brasil-2026/3158951?referrer=www.google.com) - _Recife/PE_ ![presencial]
 - 28: [SQL Saturday Brasil](https://sqlsaturday.com.br/) - _Guarulhos/SP_ ![presencial]
 <!-- MARÇO:END -->
 ### Maio
