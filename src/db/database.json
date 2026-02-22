@@ -8927,18 +8927,6 @@
               "cidade": "Florianópolis",
               "uf": "SC",
               "tipo": "presencial"
-            },
-            {
-              "nome": "Gophercon Latam",
-              "data": [
-                "02",
-                "03",
-                "04"
-              ],
-              "url": "https://gopherconlatam.org/",
-              "cidade": "Florianópolis",
-              "uf": "SC",
-              "tipo": "presencial"
             }
           ]
         },
