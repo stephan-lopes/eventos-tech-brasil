@@ -8858,6 +8858,16 @@
               "cidade": "Guarulhos",
               "uf": "SP",
               "tipo": "presencial"
+            },
+            {
+              "nome": "Tosconf[6]",
+              "data": [
+                "28"
+              ],
+              "url": "https://tosconf.lhc.net.br",
+              "cidade": "Campinas",
+              "uf": "SP",
+              "tipo": "presencial"
             }
           ]
         },
