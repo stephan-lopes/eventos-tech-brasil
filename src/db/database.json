@@ -8850,6 +8850,16 @@
               "tipo": "presencial"
             },
             {
+              "nome": "AZBR Summit 2026",
+              "data": [
+                "14"
+              ],
+              "url": "https://azbrsummit.com.br/",
+              "cidade": "",
+              "uf": "",
+              "tipo": "online"
+            },
+            {
               "nome": "SQL Saturday Brasil",
               "data": [
                 "28"
