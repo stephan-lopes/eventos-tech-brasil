@@ -8813,6 +8813,17 @@
               "tipo": "online"
             },
             {
+              "nome": "Começando com AWS - General Immersion Day",
+              "data": [
+                "24",
+                "25"
+              ],
+              "url": "https://aws-experience.com/latam/smb/e/f4222/comecando-com-aws---general-immersion-day",
+              "cidade": "",
+              "uf": "",
+              "tipo": "online"
+            },
+            {
               "nome": "Digital Investigation Conference Brazil 2026",
               "data": [
                 "26",
@@ -8860,6 +8871,17 @@
               "tipo": "online"
             },
             {
+              "nome": "Google Cloud Infrastructure for AWS Professionals - Webinar",
+              "data": [
+                "19",
+                "20"
+              ],
+              "url": "https://rsvp.withgoogle.com/events/gcif_aws_pdt26042",
+              "cidade": "",
+              "uf": "",
+              "tipo": "online"
+            },
+            {
               "nome": "SQL Saturday Brasil",
               "data": [
                 "28"
@@ -8878,6 +8900,16 @@
               "cidade": "Campinas",
               "uf": "SP",
               "tipo": "presencial"
+            },
+            {
+              "nome": "SQL Saturday",
+              "data": [
+                "28"
+              ],
+              "url": "https://sqlsaturday.com/2026-03-28-sqlsaturday1142/",
+              "cidade": "Guarulhos",
+              "uf": "SP",
+              "tipo": "presencial"
             }
           ]
         },
@@ -8893,6 +8925,37 @@
               "url": "https://sul.python.org.br/",
               "cidade": "Londrina",
               "uf": "PR",
+              "tipo": "presencial"
+            },
+            {
+              "nome": "IA Network Summit",
+              "data": [
+                "08"
+              ],
+              "url": "https://www.even3.com.br/ia-network-summit-652537/",
+              "cidade": "São Paulo",
+              "uf": "SP",
+              "tipo": "presencial"
+            },
+            {
+              "nome": "The Tech Summit",
+              "data": [
+                "11"
+              ],
+              "url": "https://thetechsummit.com.br/",
+              "cidade": "São Paulo",
+              "uf": "SP",
+              "tipo": "presencial"
+            },
+            {
+              "nome": "AI StartSe Festival 2026",
+              "data": [
+                "13",
+                "14"
+              ],
+              "url": "https://pages.startse.com/ai-festival-ingressos?hsctaattrib=208130425944",
+              "cidade": "São Paulo",
+              "uf": "SP",
               "tipo": "presencial"
             },
             {
@@ -9050,6 +9113,13 @@
       "url": "https://hackbahia.github.io/",
       "cidade": "Salvador",
       "uf": "BA",
+      "tipo": "presencial"
+    },
+    {
+      "nome": "Latinoware",
+      "url": "https://latinoware.org/",
+      "cidade": "Foz Do Iguaçu",
+      "uf": "PR",
       "tipo": "presencial"
     }
   ]
