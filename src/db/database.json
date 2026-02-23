@@ -9039,6 +9039,13 @@
       "cidade": "Salvador",
       "uf": "BA",
       "tipo": "presencial"
+    },
+    {
+      "nome": "Latinoware",
+      "url": "https://latinoware.org/",
+      "cidade": "Foz Do Iguaçu",
+      "uf": "PR",
+      "tipo": "presencial"
     }
   ]
 }
