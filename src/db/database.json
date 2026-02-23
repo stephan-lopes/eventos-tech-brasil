@@ -8878,6 +8878,16 @@
               "cidade": "Campinas",
               "uf": "SP",
               "tipo": "presencial"
+            },
+            {
+              "nome": "SQL Saturday",
+              "data": [
+                "28"
+              ],
+              "url": "https://sqlsaturday.com/2026-03-28-sqlsaturday1142/",
+              "cidade": "Guarulhos",
+              "uf": "SP",
+              "tipo": "presencial"
             }
           ]
         },
