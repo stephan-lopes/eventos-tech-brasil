@@ -8957,6 +8957,18 @@
               "cidade": "São Paulo",
               "uf": "SP",
               "tipo": "presencial"
+            },
+            {
+              "nome": "São Paulo Innovation Week",
+              "data": [
+                "13",
+                "14",
+                "15"
+              ],
+              "url": "https://saopauloinnovationweek.com.br/",
+              "cidade": "São Paulo",
+              "uf": "SP",
+              "tipo": "presencial"
             }
           ]
         },
