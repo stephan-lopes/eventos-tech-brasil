@@ -9020,6 +9020,17 @@
           "arquivado": false,
           "eventos": [
             {
+              "nome": "Agile Trends São Paulo",
+              "data": [
+                "01",
+                "31"
+              ],
+              "url": "https://doity.com.br/agile-trends-2026",
+              "cidade": "São Paulo",
+              "uf": "SP",
+              "tipo": "presencial"
+            },
+            {
               "nome": "Codecon Summit 2026",
               "data": [
                 "14"
