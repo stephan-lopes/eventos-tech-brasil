@@ -8916,6 +8916,16 @@
               "cidade": "Londrina",
               "uf": "PR",
               "tipo": "presencial"
+            },
+            {
+              "nome": "IA Network Summit",
+              "data": [
+                "08"
+              ],
+              "url": "https://www.even3.com.br/ia-network-summit-652537/",
+              "cidade": "São Paulo",
+              "uf": "SP",
+              "tipo": "presencial"
             }
           ]
         },
