@@ -8902,6 +8902,17 @@
           "arquivado": false,
           "eventos": [
             {
+              "nome": "Agile Trends Nordeste",
+              "data": [
+                "01",
+                "02"
+              ],
+              "url": "https://doity.com.br/agile-trends-nordeste-2026",
+              "cidade": "Recife",
+              "uf": "PE",
+              "tipo": "presencial"
+            },
+            {
               "nome": "Web Summit Rio 2026",
               "data": [
                 "08",
