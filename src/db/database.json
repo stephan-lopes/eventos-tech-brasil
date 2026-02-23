@@ -8894,6 +8894,17 @@
               "cidade": "Londrina",
               "uf": "PR",
               "tipo": "presencial"
+            },
+            {
+              "nome": "AI StartSe Festival 2026",
+              "data": [
+                "13",
+                "14"
+              ],
+              "url": "https://pages.startse.com/ai-festival-ingressos?hsctaattrib=208130425944",
+              "cidade": "São Paulo",
+              "uf": "SP",
+              "tipo": "presencial"
             }
           ]
         },
