@@ -8928,6 +8928,16 @@
               "tipo": "presencial"
             },
             {
+              "nome": "IA Network Summit",
+              "data": [
+                "08"
+              ],
+              "url": "https://www.even3.com.br/ia-network-summit-652537/",
+              "cidade": "São Paulo",
+              "uf": "SP",
+              "tipo": "presencial"
+            },
+            {
               "nome": "The Tech Summit",
               "data": [
                 "11"
@@ -8938,11 +8948,12 @@
               "tipo": "presencial"
             },
             {
-              "nome": "IA Network Summit",
+              "nome": "AI StartSe Festival 2026",
               "data": [
-                "08"
+                "13",
+                "14"
               ],
-              "url": "https://www.even3.com.br/ia-network-summit-652537/",
+              "url": "https://pages.startse.com/ai-festival-ingressos?hsctaattrib=208130425944",
               "cidade": "São Paulo",
               "uf": "SP",
               "tipo": "presencial"
