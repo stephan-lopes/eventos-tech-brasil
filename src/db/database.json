@@ -8913,6 +8913,19 @@
               "cidade": "Rio De Janeiro",
               "uf": "RJ",
               "tipo": "presencial"
+            },
+            {
+              "nome": "Web Summit Rio",
+              "data": [
+                "08",
+                "09",
+                "10",
+                "11"
+              ],
+              "url": "https://rio.websummit.com/pt-br/tracks/saas-summit/?utm_source=google&utm_medium=cpc&utm_campaign=23534762045&utm_content=&utm_term=&gad_source=1&gad_campaignid=23534784614&gbraid=0aaaaapjggfqoai2qpf85mbibd4l0v_zxf&gclid=cjwkcaiakvdmbhbmeiwanua9bulsrukgeop86c-shvraz_rq6_do602cjthkbxlsdcmt5zpcnmf9irocqvqqavd_bwe",
+              "cidade": "Rio De Janeiro",
+              "uf": "RJ",
+              "tipo": "presencial"
             }
           ]
         },
