@@ -8894,6 +8894,16 @@
               "cidade": "Londrina",
               "uf": "PR",
               "tipo": "presencial"
+            },
+            {
+              "nome": "The Tech Summit",
+              "data": [
+                "11"
+              ],
+              "url": "https://thetechsummit.com.br/",
+              "cidade": "São Paulo",
+              "uf": "SP",
+              "tipo": "presencial"
             }
           ]
         },
