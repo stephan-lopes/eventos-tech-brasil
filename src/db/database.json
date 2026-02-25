@@ -8988,6 +8988,16 @@
               "tipo": "presencial"
             },
             {
+              "nome": "Evento TDC 2026",
+              "data": [
+                "08"
+              ],
+              "url": "https://www.tdc.com.br",
+              "cidade": "São Paulo",
+              "uf": "SP",
+              "tipo": "híbrido"
+            },
+            {
               "nome": "Web Summit Rio 2026",
               "data": [
                 "08",
