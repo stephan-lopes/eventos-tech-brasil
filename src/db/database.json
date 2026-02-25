@@ -8882,6 +8882,17 @@
               "tipo": "online"
             },
             {
+              "nome": "TDC Summit São Paulo",
+              "data": [
+                "26",
+                "27"
+              ],
+              "url": "https://thedevconf.com/tdc/2025/summit-sao-paulo/",
+              "cidade": "Pinheiros",
+              "uf": "SP",
+              "tipo": "híbrido"
+            },
+            {
               "nome": "SQL Saturday Brasil",
               "data": [
                 "28"
